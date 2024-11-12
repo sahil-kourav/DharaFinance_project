@@ -1,0 +1,25 @@
+body{
+    margin-top: 0px;
+}
+
+.services-heading {
+    color: #3f4347;
+    font-size: 32px;
+    font-weight: 600;
+  }
+  
+  .services-sub-heading {
+    color: #6c757d;
+  }
+  
+  .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  

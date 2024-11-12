@@ -1,0 +1,96 @@
+body {
+    padding-top: 80px;
+}
+
+.about-us {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.modern-title {
+  font-weight: 700;
+  font-size: 1.9rem;
+  color: #0d1a26;
+}
+
+.modern-subtitle {
+  margin-top: -5px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #6c757d;
+  font-weight: 600;
+}
+
+.modern-description {
+  color: #333;
+  font-size: 1rem;
+  padding: -5px 0;
+  line-height: 1.6;
+}
+
+.text-section {
+  padding: 20px;
+}
+
+.modern-section {
+  /* background-color: #f9f9f9; */
+  border-radius: 8px;
+}
+
+.modern-image {
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.modern-image:hover {
+  transform: scale(1.05);
+}
+
+.feature {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.feature-title {
+  font-weight: 600;
+  color: #0d1a26;
+  font-size: 1rem;
+}
+
+.feature-description {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-top: -0.8rem;
+}
+
+.feature-right-icon {
+  font-size: 1.5rem;
+}
+
+.modern-list .feature-item {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.modern-button {
+  background-color: #00509e;
+  border: none;
+  font-weight: 500;
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.modern-button:hover {
+  color: #fff;
+  background-color: #0073e6; 
+}

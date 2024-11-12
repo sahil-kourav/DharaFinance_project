@@ -1,0 +1,72 @@
+.loan-calculator-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .loan-heading{
+    color: #81412d;
+    font-weight: 600;
+    margin-top: -10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+  }
+  
+  .loan-section-title {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #343a40;
+  }
+  
+  .result-card {
+    background-color: #e9f7ef;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+  }
+  
+  .display-4 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    padding: 2rem;
+  }
+  
+ .submit-loan-detail {
+    font-size: 1.1rem;
+    color: white;
+    padding: 7px;
+    width: 100%;
+  }
+  
+  .alert {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 0.25rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .loan-calculator-container {
+      padding: 10px;
+    }
+  }
+  

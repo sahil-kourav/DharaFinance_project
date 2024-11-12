@@ -1,0 +1,132 @@
+/* Overall Styling */
+.loan-result-container {
+  background: linear-gradient(45deg, #e3f2fd, #bbdefb);  /* Light gradient background for a fresh feel */
+  padding: 60px 20px;
+  border-radius: 12px;
+}
+
+.loan-result-header {
+  margin-bottom: 50px;
+}
+
+.loan-result-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #2c3e50;  /* Darker color for better contrast */
+  margin-bottom: 15px;
+}
+
+.loan-result-summary {
+  font-size: 1.3rem;
+  color: #34495e;  /* Slightly muted color for the summary */
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.highlight-amount {
+  color: #2ecc71;  /* Bright green accent for the amount */
+  font-weight: bold;
+}
+
+/* Loan Details Section */
+.loan-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.loan-detail {
+  margin-bottom: 30px;
+  padding: 15px;
+  width: 100%; /* Full width on mobile */
+}
+
+.loan-detail-box {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.loan-detail-box:hover {
+  transform: translateY(-8px); /* Smooth "lift" effect */
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.loan-detail-icon {
+  font-size: 2.5rem;
+  color: #3498db; /* Soft blue for icons */
+  margin-bottom: 12px;
+}
+
+.loan-detail-label {
+  font-size: 1rem;
+  color: #7f8c8d; /* Soft gray for the label */
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.loan-detail-value {
+  font-size: 1.25rem;
+  color: #2c3e50; /* Dark text for value */
+  font-weight: 500;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .loan-result-title {
+    font-size: 2rem;
+  }
+
+  .loan-result-summary {
+    font-size: 1.1rem;
+  }
+
+  .loan-detail-box {
+    padding: 20px;
+  }
+
+  .loan-detail-label {
+    font-size: 0.9rem;
+  }
+
+  .loan-detail-value {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .loan-result-title {
+    font-size: 2.2rem;
+  }
+
+  .loan-result-summary {
+    font-size: 1.2rem;
+  }
+
+  .loan-detail-box {
+    padding: 20px;
+  }
+
+  .loan-detail-label {
+    font-size: 1rem;
+  }
+}
+
+/* Ensure 4 options per row for larger screens */
+@media (min-width: 1200px) {
+  .loan-detail {
+    width: 25%; /* 4 columns per row */
+  }
+}
+
+/* Ensure 2 options per row on smaller screens */
+@media (max-width: 767px) {
+  .loan-detail {
+    width: 50%; /* 2 columns per row on mobile */
+  }
+}

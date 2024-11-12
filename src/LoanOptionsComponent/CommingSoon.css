@@ -1,0 +1,21 @@
+.coming-soon-container {
+    text-align: center;
+    padding-top: 200px;
+    margin: 0 auto;
+    width: 100%;
+    height: 600px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+  }
+  
+  .coming-soon-title {
+    font-size: 1.6rem;
+    color: #333; /* Dark text color */
+    margin-bottom: 10px;
+  }
+  
+  .coming-soon-message {
+    font-size: 1.2rem;
+    color: #666; /* Lighter text color */
+  }
+  

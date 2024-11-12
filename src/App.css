@@ -1,0 +1,600 @@
+/* Additional Global Styling */
+body {
+    margin: 0;
+    margin-top: 50px; /* Adjust this value based on your navbar height */
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #28a745;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #19692c;
+}
+
+
+/* **** Top heading section  **** */
+.top-links-section {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.site-title {
+  font-weight: 550;
+  font-size: 38px;
+  color: #28a746;
+}
+
+/* **** Loan options section  **** */
+.loan-container{
+  width: 1100px;  
+  background-color: #0056b3;
+} 
+
+ .loan-nav .nav-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 155px;
+  height: 120px;
+  color: #333;
+  background-color: whitesmoke;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.loan-nav .nav-link img {
+  width: 50px;
+  height: 45px;
+  margin-bottom: 8px;
+}
+
+.loan-nav .nav-link.active {
+  background-color: #28a745; 
+  color: white;
+}
+
+.loan-nav .nav-link.active img {
+  filter: brightness(0) invert(1);
+}
+
+.loan-nav .nav-link:hover {
+  background-color: #28a745;
+}
+
+.options-box {
+  width: 1000px;
+  display: flex;
+  padding-top: 30px;
+  margin: 10px auto;
+}
+
+.options-content-section {
+  max-width: 55%;
+}
+
+.options-section-header span {
+  font-size: 0.85rem;
+  color: #444;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.options-section-title{
+  text-align: left;
+  font-size: 1.8rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  color: #222;
+  margin-top: 3%;
+}
+
+.options-section-description {
+  text-align: left;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #555;
+  /* line-height: 1.8; */
+}
+
+.options-compare-button {
+  font-size: 1.1rem;
+  padding: 12px 24px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.options-compare-button:hover {
+  background-color: #0056b3;
+}
+
+.options-privacy-text {
+  font-size: 0.8rem;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.options-privacy-text i {
+  margin-right: 3px;
+  font-size: 1rem;
+}
+
+.options-image-section img {
+  max-width: 550px;
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+}
+
+
+
+/* **** Banner-2 ( Why do millions of people trust Dhara Finance? ) **** */
+.content-box {
+  width: 100%;
+  max-width: 530px;
+  margin: 0px 0 0 -20px;
+}
+
+.banner-2-title{
+ font-size: 30px ;
+ padding-bottom: 20px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content-box .content-sec {
+  margin-top: 10px;
+}
+
+.content-box .content-sec .content-sec-title {
+  text-align: left;
+  font-size: 1.3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(80, 74, 74);
+  font-weight: 550;
+  padding: 7px 0;
+}
+
+.content-box .content-sec p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.02rem;
+  text-align: left;
+}
+
+
+
+/* **** publication section **** */
+.publication-section {
+  background-color: #ffffff; 
+  margin-top: -1rem;
+}
+
+.publication-text {
+  font-size: 1.1rem;
+  color: #999999;
+  margin-bottom: 0.5rem; 
+}
+
+.logos-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; 
+}
+.publication-logo {
+  height: 40px; 
+  width: auto; 
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+
+.publication-logo:hover {
+  opacity: 1;
+}
+
+
+.publication-logo.mint {
+  height: 25px;
+}
+
+.publication-logo.mc {
+  height: 25px;
+}
+
+.publication-logo.ft {
+  height: 25px;
+}
+
+.publication-logo.forbes {
+  height: 30px;
+}
+
+.publication-logo.mw {
+  height: 35px;
+}
+
+
+
+
+/* **** featured section **** */
+.featured-rates-section {
+  padding: 3rem 0;
+  background-color: #f2f4f6;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  width: 100px;
+  height: 3px;
+  background-color: #007bff;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.rate-cards-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap; 
+  gap: 1rem; 
+}
+
+.rate-card {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 1.6rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 22%; /* Set width of each card */
+  min-width: 250px; /* Ensures cards are not too narrow */
+  border-top: 4px solid transparent;
+  cursor: pointer;
+  text-align: center;
+}
+
+.rate-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  border-top: 4px solid #007bff;
+}
+
+.rate-type {
+  font-size: 1rem;
+  font-weight: 550;
+  color: #333;
+  margin-bottom: 0.7rem;
+  border-left: 4px solid #007bff;
+  padding-left: 8px;
+  text-transform: uppercase;
+}
+
+.rate-desc {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.3px;
+}
+
+.rate-value {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 0.6rem;
+  transition: color 0.3s ease;
+}
+
+.rate-value:hover {
+  color: #0056b3;
+}
+
+.rate-term {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.disclaimer {
+  font-size: 0.9rem;
+  color: #999;
+  max-width: 900px;
+  padding-top: 2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* **** financial-journey-section **** */
+.financial-journey-container {
+  max-width: 1050px;
+  margin-left: 200px;
+  text-align: center;
+  padding-top: 3.6rem;
+}
+
+.financial-heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.content-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.left-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.7rem;
+  width: 55%;
+}
+
+.financial-journey-box {
+  background-color: #f0f9f9;
+  padding: 1.3rem 1.3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.financial-journey-box:hover {
+  transform: translateY(-10px);
+}
+
+.icon {
+  font-size: 2rem;
+  color: #22b89a;
+  margin-bottom: 1rem;
+}
+
+.financial-journey-box h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.financial-journey-box p {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0.9rem;
+}
+
+.box-link {
+  font-size: 0.9rem;
+  color: #22b89a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.box-link:hover {
+  text-decoration: underline;
+}
+
+.right-image {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+
+
+/* **** What does Dhara finance do? section **** */
+.custom-container {
+  max-width: 100%;
+  background-color: #4a597917; 
+  margin: 60px 0px auto;
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center;
+  justify-content: center; 
+  border-radius: 10px;
+}
+
+.custom-text-section {
+  max-width: 550px; 
+  padding-right: 20px;
+  flex: 1; 
+}
+
+.custom-text-title {
+  font-size: 30px;
+  text-align: left;
+  margin-bottom: 15px;
+  font-weight: 600; 
+  color: #1a1a1a; 
+}
+
+.custom-text-para {
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #4a4a4a;
+}
+
+.list-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.list-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 30px 20px 0; 
+}
+
+.list-section li {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #44444470; 
+  opacity: 0.6;
+  font-weight: 500;
+}
+
+.list-section li svg {
+  margin-right: 10px;
+  font-size: 22px;
+  color: #4b7a76; 
+}
+
+.list-section li:hover{
+  color: #6390c0;
+  opacity: 1;
+  cursor: pointer;
+}
+.image-section {
+  flex-shrink: 0;
+  flex-basis: 320px; 
+  margin-left: 20px;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 300px; 
+  border-radius: 50%;
+}
+
+
+/* Footer section */
+.footer {
+  width: 800p;
+  background-color: #343a40; 
+  color: #ffffff; 
+}
+
+.footer-container{
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #aaaaaa; 
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffffff; 
+}
+
+.footer img {
+  max-width: 110px; 
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 6px;
+  margin-top: 8px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.footer .img-2 {
+  width: 120px;
+  margin-left: 5px;
+}
+
+.footer hr {
+  width: 100%;
+  border-color: #444444; 
+  margin: 1.5rem 0; 
+}
+
+.footer .footer-icon {
+  font-size: 1.6rem; 
+  padding: 0px 5px;
+  color: white;
+  font-weight: 600;
+  margin-left: 15px;
+  transition: color 0.3s ease; 
+}
+
+.footer .bi:hover {
+  color: rgb(255, 0, 51);
+}
+
+.footer .list-unstyled {
+  padding: 10px 0;
+}
+
+.footer .list-unstyled li {
+  padding: 5px 0;
+}
+
+.footer .list-unstyled li a {
+  font-size: 1rem;
+}
+
+.footer .list-unstyled li:hover {
+  text-decoration: underline; 
+}
+
+.footer p {
+  margin-bottom: 0; 
+  font-size: 0.8rem; 
+}
+
+.footer h5 {
+  font-weight: 600;
+  font-size: 1.2rem; 
+  margin-bottom: 1rem; 
+  text-transform: uppercase; 
+}
+
+.footer .d-flex {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer .d-flex a {
+  color: red;
+  margin-right: 1rem;
+}
+
