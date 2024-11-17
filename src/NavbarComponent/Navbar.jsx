@@ -30,21 +30,21 @@ const Navbar = () => {
 
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-          <li className="nav-item">
-            <NavLink exact className="nav-link" activeClassName="active" to="/">
-              Home
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink className="nav-link" activeClassName="active" to="/about-us">
-              About Us
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink className="nav-link" activeClassName="active" to="/services">
-              Services
-            </NavLink>
-          </li>
+<li className="nav-item">
+  <NavLink exact className="nav-link" activeClassName="active" to="/">
+    Home
+  </NavLink>
+</li>
+<li className="nav-item">
+  <NavLink className="nav-link" activeClassName="active" to="/about-us">
+    About Us
+  </NavLink>
+</li>
+<li className="nav-item">
+  <NavLink className="nav-link" activeClassName="active" to="/services">
+    Services
+  </NavLink>
+</li>
         </ul>
 
         <form className="d-flex align-items-center justify-content-center connect-form">
@@ -84,3 +84,119 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState } from "react";
+// import { NavLink } from "react-router-dom";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import "./Navbar.css";
+// import MenuIcon from "@mui/icons-material/Menu";
+// import "bootstrap-icons/font/bootstrap-icons.css";
+// import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
+// const Navbar = () => {
+//   const [searchActive, setSearchActive] = useState(false);
+
+//   const handleSearchClick = () => {
+//     setSearchActive(!searchActive);
+//   };
+
+//   const [isNavbarActive, setIsNavbarActive] = useState(false);
+
+//   const toggleNavbar = () => {
+//     setIsNavbarActive(!isNavbarActive);
+//   };
+
+//   return (
+//     <header className={`header bg-dark ${isNavbarActive ? "sticky" : ""}`}>
+//       <NavLink className="logo" to="/">
+//         DharaFinance
+//       </NavLink>
+
+//       <div className="menu-icon" id="menu-icon" onClick={toggleNavbar}>
+//         <MenuIcon style={{ fontSize: "3rem", color: "#ededed" }} />
+//       </div>
+
+//       <nav className={`navbar ${isNavbarActive ? "active" : ""}`}>
+//         <ul className="navbar-nav">
+//           <li className="nav-item">
+//             <NavLink exact className="nav-link" activeClassName="active" to="/">
+//               Home
+//             </NavLink>
+//           </li>
+//           <li className="nav-item">
+//             <NavLink
+//               className="nav-link"
+//               activeClassName="active"
+//               to="/about-us"
+//             >
+//               About Us
+//             </NavLink>
+//           </li>
+//           <li className="nav-item">
+//             <NavLink
+//               className="nav-link"
+//               activeClassName="active"
+//               to="/services"
+//             >
+//               Services
+//             </NavLink>
+//           </li>
+
+//         <form className="connect-form">
+//             <li className="nav-item">
+//               <NavLink
+//                 to="/connect-us"
+//                 className="btn btn-outline-light connect-btn"
+//               >
+//                 Contact Us
+//               </NavLink>
+//             </li>
+
+//             <li className="nav-item">
+//               {searchActive ? (
+//                 <div className="search-box">
+//                   <input
+//                     type="text"
+//                     className="search-input"
+//                     placeholder="Search about loans"
+//                     aria-label="Search"
+//                   />
+//                   <button
+//                     className="btn btn-outline-light close-btn"
+//                     onClick={handleSearchClick}
+//                     type="button"
+//                   >
+//                     <i className="bi bi-x"></i>
+//                   </button>
+//                 </div>
+//               ) : (
+//                 <button
+//                   className="btn btn-outline-light search-btn"
+//                   type="button"
+//                   onClick={handleSearchClick}
+//                 >
+//                   <i className="bi bi-search"></i>
+//                 </button>
+//               )}
+//             </li>
+//         </form>
+//           </ul>
+
+//         <span className="active-nav"></span>
+//       </nav>
+//     </header>
+//   );
+// };
+
+// export default Navbar;

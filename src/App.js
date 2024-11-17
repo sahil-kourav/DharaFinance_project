@@ -1,11 +1,12 @@
 import React from 'react';
-import { Route, Routes, useLocation } from 'react-router-dom';
-import Navbar from './NavbarComponent/Navbar'; 
 import './App.css';
-import ContectUs from './ContectUS/ContectUs';
-import Footer from './FooterComponent/Footer';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import HomePage from './HomePage';
+import Navbar from './NavbarComponent/Navbar'; 
+import ContectUs from './ContectUSComponent/ContectUs';
+import Footer from './FooterComponent/Footer';
 import AboutUsPage from './AboutUs/AboutUs';
+import ShowData from './ShowDataComponent/ShowData';
 import ServicesPage from './ServicesComponent/ServicesPage';
 import LoanOptions from './LoanOptionsComponent/LoanOptions';
 import PersonalLoanComponent from './LoanOptionsComponent/PersonalLoanComponent'; 
@@ -16,7 +17,6 @@ import InsuranceComponent from './LoanOptionsComponent/InsuranceComponent';
 import HomePurchaseComponent from './LoanOptionsComponent/HomePurchaseComponent';
 import AutoLoanComponent from './LoanOptionsComponent/AutoLoanComponent';
 import LoanResultComponent from './LoanOptionsComponent/LoanResultComponent';
-import ShowData from './ShowDataComponent/ShowData';
 
 const App = () => {       
   const location = useLocation(); 

@@ -104,7 +104,7 @@ const HomePage = () => {
 
    {/* ----- featured section -----  */}
    <section className="featured-rates-section">
-      <div className="container">
+      <div className="featured-container">
         <h2 className="section-title">Featured rates on our network</h2>
 
         <div className="row justify-content-center">

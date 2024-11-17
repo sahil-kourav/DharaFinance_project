@@ -20,8 +20,8 @@ const PersonalLoanComponent = () => {
   const [monthlyExpenses, setMonthlyExpenses] = useState('');
   const [totalLoans, setTotalLoans] = useState('');
   const [propertyType, setPropertyType] = useState('');
-  const [propertyValue, setPropertyValue] = useState(''); // New state for property value
-  const [propertyLoanAmount, setPropertyLoanAmount] = useState(''); // New state for loan amount for property
+  // const [propertyValue, setPropertyValue] = useState(''); 
+  // const [propertyLoanAmount, setPropertyLoanAmount] = useState(''); 
   const [propertyLocation, setPropertyLocation] = useState(''); // New state for property location
   const [calculatedEMI, setCalculatedEMI] = useState(null);
   const [error, setError] = useState('');
@@ -57,9 +57,9 @@ const PersonalLoanComponent = () => {
         monthlyExpenses,
         totalLoans,
         propertyType,
-        propertyValue, // Include property value in state
-        propertyLoanAmount, // Include loan amount for property in state
-        propertyLocation, // Include property location in state
+        // propertyValue, 
+        // propertyLoanAmount,
+        propertyLocation, 
         calculatedEMI: emi.toFixed(2),
       },
     });

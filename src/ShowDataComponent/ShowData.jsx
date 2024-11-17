@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { db } from "./firestore";
 import { collection, addDoc, getDocs, doc, deleteDoc, updateDoc } from "firebase/firestore";
-import './ShowData.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const ShowData = () => {
@@ -162,7 +161,7 @@ const ShowData = () => {
               required
             />
           </div>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-secondary">
             {emp.id ? "Update Employee" : "Add Employee"}
           </button>
         </form>
