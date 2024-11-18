@@ -100,7 +100,7 @@ const ContectUs = () => {
                         <FaEnvelope className="contect-icon fs-4" />
                         <div className="detail-content">
                             <h5>General Inquiries</h5>
-                            <p>dharafinance.office@gmail.com</p>
+                            <p>dharafinance.info@gmail.com</p>
                         </div>
                     </div>
                 </div>
