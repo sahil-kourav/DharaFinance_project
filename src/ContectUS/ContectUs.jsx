@@ -7,7 +7,6 @@ import { collection,addDoc } from "firebase/firestore";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-
 const ContectUs = () => {
   const [emp, updateEmp] = useState({first: "", last: "", email: "", number: "", query: "" });
   const [isOnline, setIsOnline] = useState(navigator.onLine);

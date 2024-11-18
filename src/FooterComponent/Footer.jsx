@@ -38,18 +38,18 @@ const Footer = () => {
 
           <div className="col-md-4">
             <h5>Follow Us</h5>
-            <div className="d-flex">
+            <div className="d-flex ">
               <a href="https://www.facebook.com/dhara.motor.3/" className="mt-2 mb-1 text-light"><i className="footer-icon bi bi-facebook"></i></a>
               <a href="https://x.com/i/flow/login?redirect_after_login=%2FDharaMotorFLtd" className="mt-2 mb-1 text-light"><i className="footer-icon bi bi-twitter"></i></a>
               <a href="https://www.instagram.com/dharafinanceindore/" className="mt-2 mb-1 text-light"><i className="footer-icon bi bi-instagram"></i></a>
               <a href="https://in.linkedin.com/company/dhara-finance" className="mt-2 mb-1 text-light"><i className="footer-icon bi bi-linkedin"></i></a>
             </div>
 
-            <h6 className="mt-3">Download Our App</h6>
+            {/* <h6 className="mt-3">Download Our App</h6>
             <div className="d-flex mt-3">
             <img src={appStoreImg} alt="App Store" className="img-fluid me-1" />
             <img src={googlePlayImg} alt="Google Play" className="img-fluid img-2 " />
-            </div>
+            </div> */}
           </div>
         </div>
 

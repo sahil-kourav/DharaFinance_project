@@ -73,6 +73,11 @@ body {
   filter: brightness(0) invert(1);
 }
 
+.loan-nav .nav-link.active img:hover {
+  filter: brightness(0) invert(1);
+  /* color: #0056b3; */
+}
+
 .loan-nav .nav-link:hover {
   background-color: #28a745;
   color: #333;
