@@ -15,7 +15,7 @@ import { FaCar,FaCreditCard, FaMoneyBillWave, FaUniversity, FaShieldAlt } from '
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="code-container">
       {/* Banner Section */}
       <section className="banner-section container my-5">
         <div className="row">
