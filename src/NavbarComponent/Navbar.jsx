@@ -98,7 +98,7 @@
 
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import "bootstrap-icons/font/bootstrap-icons.css";

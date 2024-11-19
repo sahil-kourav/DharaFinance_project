@@ -104,123 +104,122 @@ const HomePage = () => {
 
    {/* ----- featured section -----  */}
    <section className="featured-rates-section">
-      <div className="featured-container">
-        <h2 className="section-title">Featured rates on our network</h2>
+  <div className="featured-container">
+    <h2 className="featured-title">Featured rates on our network</h2>
 
-        <div className="row justify-content-center">
-          {/* First Rate Card */}
-          <div className="col-md-3">
-            <div className="rate-card">
-              <h3 className="rate-type">Mortgage</h3>
-              <p className="rate-desc">APR rates as low as</p>
-              <h2 className="rate-value">7.27%</h2>
-              <p className="rate-term">5/1 ARM<br />$200,000 LOAN</p>
-            </div>
-          </div>
-
-          {/* Second Rate Card */}
-          <div className="col-md-3">
-            <div className="rate-card">
-              <h3 className="rate-type">Home Refinance</h3>
-              <p className="rate-desc">APR rates as low as</p>
-              <h2 className="rate-value">6.54%</h2>
-              <p className="rate-term">30 YEAR FIXED<br />$200,000 LOAN</p>
-            </div>
-          </div>
-
-          {/* Third Rate Card */}
-          <div className="col-md-3">
-            <div className="rate-card">
-              <h3 className="rate-type">Personal Loans</h3>
-              <p className="rate-desc">APR rates as low as</p>
-              <h2 className="rate-value">7.49%</h2>
-              <p className="rate-term">3 YEAR<br />$20,000 LOAN</p>
-            </div>
-          </div>
-
-          {/* Fourth Rate Card */}
-          <div className="col-md-3">
-            <div className="rate-card">
-              <h3 className="rate-type">HELOC</h3>
-              <p className="rate-desc">APR rates as low as</p>
-              <h2 className="rate-value">6.50%</h2>
-              <p className="rate-term">30 YEAR FIXED<br />$50,000 LOAN</p>
-            </div>
-          </div>
-        </div>
-
-        <p className="disclaimer">
-          Rates above may change at lender discretion and may not be available at the time of loan commitment or lock-in.
-        </p>
+    <div className="rate-cards-wrapper">
+      {/* First Rate Card */}
+      <div className="rate-card">
+        <h3 className="rate-type">Mortgage</h3>
+        <p className="rate-desc">APR rates as low as</p>
+        <h2 className="rate-value">7.27%</h2>
+        <p className="rate-term">5/1 ARM<br />$200,000 LOAN</p>
       </div>
-    </section>
+
+      {/* Second Rate Card */}
+      <div className="rate-card">
+        <h3 className="rate-type">Home Refinance</h3>
+        <p className="rate-desc">APR rates as low as</p>
+        <h2 className="rate-value">6.54%</h2>
+        <p className="rate-term">30 YEAR FIXED<br />$200,000 LOAN</p>
+      </div>
+
+      {/* Third Rate Card */}
+      <div className="rate-card">
+        <h3 className="rate-type">Personal Loans</h3>
+        <p className="rate-desc">APR rates as low as</p>
+        <h2 className="rate-value">7.49%</h2>
+        <p className="rate-term">3 YEAR<br />$20,000 LOAN</p>
+      </div>
+
+      {/* Fourth Rate Card */}
+      <div className="rate-card">
+        <h3 className="rate-type">HELOC</h3>
+        <p className="rate-desc">APR rates as low as</p>
+        <h2 className="rate-value">6.50%</h2>
+        <p className="rate-term">30 YEAR FIXED<br />$50,000 LOAN</p>
+      </div>
+    </div>
+
+    <p className="disclaimer">
+      Rates above may change at lender discretion and may not be available at the time of loan commitment or lock-in.
+    </p>
+  </div>
+</section>
+
+
 
 
 {/* ----- financial journey section ----- */}
+
 <div className="financial-journey-container">
-      <h2 className="financial-heading">Tools to start your financial journey</h2>
-      <div className="content-wrapper">
-        <div className="left-boxes">
-          <div className="financial-journey-box">
-            <FaHome className="icon" />
-            <h3>Mortgage Rates</h3>
-            <p>Comparing to find your lowest rate could save you thousands.</p>
-            <a href="#" className="box-link">Compare Rates</a>
-          </div>
-          <div className="financial-journey-box">
-            <FaStar className="icon" />
-            <h3>Ratings & Reviews</h3>
-            <p>Read real reviews about the lenders on our network.</p>
-            <a href="#" className="box-link">Read lender reviews</a>
-          </div>
-          <div className="financial-journey-box">
-            <FaCalculator className="icon" />
-            <h3>Payment Calculator</h3>
-            <p>Figure out your estimated payments the easy way.</p>
-            <a href="#" className="box-link">Mortgage Calculator</a>
-          </div>
-          <div className="financial-journey-box">
-            <FaChartLine className="icon" />
-            <h3>Credit Score</h3>
-            <p>Get actionable insights to help you boost your score.</p>
-            <a href="#" className="box-link">Get your credit score</a>
-          </div>
-        </div>
-        <div className="right-image">
-          <img src={manwithphone} alt="Financial Journey" className="img-fluid" />
-        </div>
+  <h2 className="financial-heading">Tools to start your financial journey</h2>
+  <div className="content-wrapper">
+    <div className="financial-outer-boxes">
+      <div className="financial-inside-box">
+        <FaHome className="financial-icon" />
+        <h3>Mortgage Rates</h3>
+        <p>Comparing to find your lowest rate could save you thousands.</p>
+        <a href="#" className="financial-box-link">Compare Rates</a>
+      </div>
+      <div className="financial-inside-box">
+        <FaStar className="financial-icon" />
+        <h3>Ratings & Reviews</h3>
+        <p>Read real reviews about the lenders on our network.</p>
+        <a href="#" className="financial-box-link">Read lender reviews</a>
+      </div>
+      <div className="financial-inside-box">
+        <FaCalculator className="financial-icon" />
+        <h3>Payment Calculator</h3>
+        <p>Figure out your estimated payments the easy way.</p>
+        <a href="#" className="financial-box-link">Mortgage Calculator</a>
+      </div>
+      <div className="financial-inside-box">
+        <FaChartLine className="financial-icon" />
+        <h3>Credit Score</h3>
+        <p>Get actionable insights to help you boost your score.</p>
+        <a href="#" className="financial-box-link">Get your credit score</a>
       </div>
     </div>
+  </div>
+</div>
 
 
-    {/* ----- What does CrediNest do? section ----- */}
+    {/* ----- What does dhara finance do? section ----- */}
     <div className="custom-container">
-      <div className="custom-text-section">
-        <h2 className="custom-text-title">What does Dhara Finance do?</h2>
-        <p className="custom-text-para">
-        We make sure that our customers are offered speedy loans with flexible repayment options. We also provide loans to women customers at special rates and fast approvals .We provide fast and easy loans for the purchase of new & used cars, utility vehicles, three wheelers and commercial vehicles.
-        </p>
-        <div className="list-section">
-          <ul>
-            <li><FaHome /> Mortgage Refinance</li>
-            <li><FaMoneyBillWave /> Home Equity Loans</li>
-            <li><FaCreditCard /> Credit Cards</li>
-            <li><FaCalculator /> Mortgage Calculator</li>
-            <li><FaMoneyBillWave /> Personal Loans</li>
-          </ul>
-          <ul>
-            <li><FaUniversity /> Student Loan Refinance</li>
-            <li><FaCar /> Auto Loans</li>
-            <li><FaShieldAlt /> Insurance</li>
-            <li><FaCreditCard /> Free Credit Score</li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="image-section">
-        <img src={whatdoesltdowoman} alt="Person Image" />
-      </div>
+  <div className="custom-primary-section">
+    <h2 className="custom-text-title">What does Dhara Finance do?</h2>
+    <p className="custom-text-p">
+      We make sure that our customers are offered speedy loans with flexible repayment options. 
+      We also provide loans to women customers at special rates and fast approvals. 
+      We provide fast and easy loans for the purchase of new & used cars, utility vehicles, 
+      three-wheelers, and commercial vehicles.
+    </p>
+    <div className="custom-lists">
+      <ul>
+        <li><FaHome /> Mortgage Refinance</li>
+        <li><FaMoneyBillWave /> Home Equity Loans</li>
+        <li><FaCreditCard /> Credit Cards</li>
+        <li><FaCalculator /> Mortgage Calculator</li>
+        <li><FaMoneyBillWave /> Personal Loans</li>
+      </ul>
+      <ul>
+        <li><FaUniversity /> Student Loan Refinance</li>
+        <li><FaCar /> Auto Loans</li>
+        <li><FaShieldAlt /> Insurance</li>
+        <li><FaCreditCard /> Free Credit Score</li>
+      </ul>
     </div>
+  </div>
+  <div className="custom-secondary-section">
+    <img
+      className="custom-img"
+      src={whatdoesltdowoman}
+      alt="Illustration of Dhara Finance's services"
+    />
+  </div>
+</div>
+
   </div>
   );
 };

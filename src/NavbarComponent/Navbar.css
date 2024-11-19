@@ -185,6 +185,7 @@
 
 .nav-link.active {
   border-bottom: 1px solid white;
+  border-radius: 6px;
   color: rgb(226, 159, 113);
 }
 

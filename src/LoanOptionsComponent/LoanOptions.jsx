@@ -27,8 +27,8 @@ const LoanOptions = () => {
   };
   return (
     <>
-      <div className="site-heading text-center mb-5 ">
-        <h1 className="site-title text-center text-dark mt-5">
+      <div className="site-heading">
+        <h1 className="site-title">
           When options grow, <span className="site-title-span">You glow.</span>
         </h1>
       </div>
@@ -103,9 +103,9 @@ const LoanOptions = () => {
                         <header className="options-section-header">
                           <span className="text-muted personal">Personal Loans</span>
                         </header>
-                        <h1 className="options-section-title">Find the right personal loan rate for you</h1>
+                        <h1 className="options-section-title">Find the perfect loan rate for your needs</h1>
                         <p className="options-section-description">
-                          Need to consolidate debt or make a large purchase? We bring the lenders to you so you can shop and compare personal loan offers in minutes.
+                        Whether you're looking to consolidate debt or finance a major purchase, we connect you with top lenders to help you compare personal loan options in just minutes.
                         </p>
                         <button onClick={() => navigate('/personal-loans')}
                           className="btn btn-primary btn-md options-compare-button"
@@ -131,9 +131,9 @@ const LoanOptions = () => {
                         <header className="options-section-header">
                           <span className="text-muted personal">Student loans</span>
                         </header>
-                        <h1 className="options-section-title">Compare student loan options for you</h1>
+                        <h1 className="options-section-title">Pay for school the smart way.</h1>
                         <p className="options-section-description">
-                          Pay for school the smart way. We’ll help you shop and compare your options in minutes.</p>
+                        We simplify the process to help you compare various student loan options quickly, so you can make the best choice for your future in just a few minutes.</p>
 
                         <button onClick={() => navigate('/student-loans')}
                           className="btn btn-primary btn-md options-compare-button"
@@ -159,9 +159,9 @@ const LoanOptions = () => {
                         <header className="options-section-header">
                           <span className="text-muted personal">Home Purchase</span>
                         </header>
-                        <h1 className="options-section-title">Find the best mortgage rates for your new home</h1>
+                        <h1 className="options-section-title">Ready to buy your dream home?</h1>
                         <p className="options-section-description">
-                          Ready to buy your first home? We help you compare mortgage rates and find the best deal for your new home.
+                        We make it easy to compare mortgage rates and find the best deal tailored to your needs, so you can start your homeownership journey with confidence.
                         </p>
                         <button onClick={() => navigate('/home-purchase')}
                           className="btn btn-primary btn-md options-compare-button"
