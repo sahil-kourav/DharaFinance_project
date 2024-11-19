@@ -189,14 +189,12 @@
   color: rgb(226, 159, 113);
 }
 
-
 #menu-icon {
   position: relative;
   font-size: 3.6rem;
   cursor: pointer;
   display: none;
 }
-
 
 .connect-form {
   display: flex;
@@ -264,6 +262,7 @@
 @media (max-width: 991px) {
   .header {
     background: var(--bg-color);
+    height: 70px;
   }
 
   #menu-icon {
@@ -275,7 +274,7 @@
     top: 100%;
     left: -100%;
     width: 100%;
-    padding: 1rem 4%;
+    padding: .8rem 3%;
     background: var(--main-color);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     z-index: 1;

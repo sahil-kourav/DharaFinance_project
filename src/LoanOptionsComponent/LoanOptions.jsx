@@ -40,48 +40,48 @@ const LoanOptions = () => {
             <Row>
               <Col>
                 <Nav className="justify-content-center loan-nav">
-                  <Nav.Item>
+                  <Nav.Item className="loan-option">
                     <Nav.Link eventKey="personalLoans" className="text-center">
                       <img
                         src={money}
                         alt="Personal Loans"
                         className="loan-icon"
                       />
-                      Personal Loans
+                      Personal Loans 
                     </Nav.Link>
                   </Nav.Item>
-                  <Nav.Item>
+                  <Nav.Item className="loan-option">
                     <Nav.Link eventKey="studentLoan" className="text-center">
                       <img src={educationloan} alt="Student Loan" className="loan-icon" />
                       Student Loans
                     </Nav.Link>
                   </Nav.Item>
-                  <Nav.Item>
+                  <Nav.Item className="loan-option">
                     <Nav.Link eventKey="homePurchase" className="text-center">
                       <img src={buyhome} alt="Home Purchase" className="loan-icon" />
                       Home Purchase
                     </Nav.Link>
                   </Nav.Item>
-                  <Nav.Item>
+                  <Nav.Item className="loan-option">
                     <Nav.Link eventKey="creditCards" className="text-center">
                       <img src={creditcard} alt="Credit Cards" className="loan-icon" />
                       Credit Cards
                     </Nav.Link>
                   </Nav.Item>
-                  <Nav.Item>
+                  <Nav.Item className="loan-option">
                     <Nav.Link eventKey="insurance" className="text-center">
                       <img src={lifeinsurance} alt="Insurance" className="loan-icon" />
                       Insurance
                     </Nav.Link>
                   </Nav.Item>
-                  <Nav.Item>
+                  <Nav.Item className="loan-option">
                     <Nav.Link eventKey="autoLoans" className="text-center">
                       <img src={loan} alt="Auto Loans" className="loan-icon" />
                       Auto Loans
                     </Nav.Link>
                   </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link eventKey="creditScore" className="text-center">
+                  <Nav.Item className="loan-option">
+                    <Nav.Link eventKey="creditScore" className="inner-loan-option">
                       <img src={speedometer} alt="Credit Score" className="loan-icon" />
                       Credit Score
                     </Nav.Link>

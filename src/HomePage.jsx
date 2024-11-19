@@ -17,57 +17,55 @@ const HomePage = () => {
   return (
     <div className="code-container">
       {/* Banner Section */}
-      <section className="banner-section container my-5">
-        <div className="row">
-          <div className="col-12">
-            <h1 className="mt-3 mb-5 text-center banner-2-title">
-            Why do millions of people trust Dhara Finance?
-            </h1>
-          </div>
+      <section className="banner-section">
+      <div className="banner-header">
+        <h1 className="banner-title">
+          Why do millions of people trust Dhara Finance?
+        </h1>
+      </div>
 
-          {/* Image Section */}
-          <div className="col-md-6 text-center">
-            <figure className="banner-2-img">
-              <img
-                src={dharafinance}
-                alt="CrediNest application preview"
-                className="img-fluid"
-              />
-            </figure>
-          </div>
-
-          {/* Content Section */}
-          <div className="content-box-container col-md-6">
-            <article className="content-box">
-              {/* Security Section */}
-              <div className="content-sec">
-                <h2 className="content-sec-title">Security</h2>
-                <p>
-                Responsive customer service provides reassurance, allowing users to report issues and receive assistance promptly.
-                A strong track record of reliability and positive user testimonials contributes to the overall trustworthiness of Dhara Finance.
-                </p>
-              </div>
-
-              {/* Savings Section */}
-              <div className="content-sec">
-                <h2 className="content-sec-title">Savings</h2>
-                <p>
-                Excellent customer support and financial education resources empower customers to make informed decisions about their savings.
-                Advanced security measures ensure that all transactions related to savings are safe and protected from fraud.
-                </p>
-              </div>
-
-              {/* Support Section */}
-              <div className="content-sec">
-                <h2 className="content-sec-title">Support</h2>
-                <p>
-                Dedicated support teams are available around the clock to assist customers with any inquiries or issues.Active involvement in community initiatives demonstrates Dhara Finance's commitment to customer well-being beyond financial services.
-                </p>
-              </div>
-            </article>
-          </div>
+      <div className="banner-content">
+        {/* Image Section */}
+        <div className="image-container">
+          <figure className="image-wrapper">
+            <img
+              src={dharafinance}
+              alt="CrediNest application preview"
+              className="banner-image"
+            />
+          </figure>
         </div>
-      </section>
+
+        {/* Content Section */}
+        <div className="content-container">
+          <article className="content-box">
+            {/* Security Section */}
+            <div className="content-sec">
+              <h2 className="content-sec-title">Security</h2>
+              <p>
+              Responsive customer service ensures users feel supported, making it easy to report issues and get timely help. Positive user 
+              experiences and proven reliability build trust in Dhara Finance.
+              </p>
+            </div>
+
+            {/* Savings Section */}
+            <div className="content-sec">
+              <h2 className="content-sec-title">Savings</h2>
+              <p>
+              Outstanding customer support and educational resources help customers make smart decisions about their savings. Robust security measures safeguard every transaction, protecting against fraud.
+              </p>
+            </div>
+
+            {/* Support Section */}
+            <div className="content-sec">
+              <h2 className="content-sec-title">Support</h2>
+              <p>
+              Round-the-clock support teams are ready to assist customers with any questions or concerns. Dhara Finance's active role in community initiatives reflects its dedication to customer well-being beyond just financial services.              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
       <hr className="divider" />
 
 
