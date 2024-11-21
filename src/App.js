@@ -29,6 +29,9 @@ import NinthPL from "./LoanOptionsComponent/PersonalLoanComponent/NinthPL";
 import TenthPL from "./LoanOptionsComponent/PersonalLoanComponent/TenthPL"; 
 import EleventhPL from "./LoanOptionsComponent/PersonalLoanComponent/EleventhPL"; 
 import TwelfthPL from "./LoanOptionsComponent/PersonalLoanComponent/TwelfthPL"; 
+import EmailComponent from "./LoanOptionsComponent/PersonalLoanComponent/EmailComponent";
+import AadharComponent from "./LoanOptionsComponent/PersonalLoanComponent/AadharComponent";
+import CheckDetailsComponent from "./LoanOptionsComponent/PersonalLoanComponent/CheckDetailsComponent";
 
 
 const App = () => {       
@@ -64,6 +67,11 @@ const App = () => {
       <Route path="/tenth" element={<TenthPL />} />
       <Route path="/eleventh" element={<EleventhPL />} />
       <Route path="/twelfth" element={<TwelfthPL />} />
+
+      <Route path="/check-details" element={<CheckDetailsComponent />} />
+      <Route path="/aadhar" element={<AadharComponent />} />
+      <Route path="/email" element={<EmailComponent />} />
+      {/* <Route path="/twelfth" element={< />} /> */}
       </Routes>
 
       <Footer />

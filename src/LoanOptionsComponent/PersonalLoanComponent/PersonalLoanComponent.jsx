@@ -267,23 +267,23 @@
 //               </Col>
 //                 </Row>
 
-//                 <h3 className="loan-section-title">Property Ownership Details</h3>
-//                 <Row>
-//                   <Col md={6}>
-//                     <Form.Group controlId="propertyType" className="mb-3">
-//                       <Form.Label>Type of Property*</Form.Label>
-//                       <Form.Control
-//                         as="select"
-//                         value={propertyType}
-//                         onChange={(e) => setPropertyType(e.target.value)}
-//                         required
-//                       >
-//                         <option value="">Select Property Type</option>
-//                         <option value="Residential">Residential</option>
-//                         <option value="Commercial">Commercial</option>
-//                       </Form.Control>
-//                     </Form.Group>
-//                   </Col>
+// <h3 className="loan-section-title">Property Ownership Details</h3>
+// <Row>
+//   <Col md={6}>
+//     <Form.Group controlId="propertyType" className="mb-3">
+//       <Form.Label>Type of Property*</Form.Label>
+//       <Form.Control
+//         as="select"
+//         value={propertyType}
+//         onChange={(e) => setPropertyType(e.target.value)}
+//         required
+//       >
+//         <option value="">Select Property Type</option>
+//         <option value="Residential">Residential</option>
+//         <option value="Commercial">Commercial</option>
+//       </Form.Control>
+//     </Form.Group>
+//   </Col>
 //                   <Col md={6}>
 //                     <Form.Group controlId="propertyLocation" className="mb-3">
 //                       <Form.Label>Property Location*</Form.Label>
@@ -322,16 +322,106 @@
 
 
 
-import React from "react";
+
+// import React, { useState } from "react";
+// import { useNavigate } from "react-router-dom";
+// import "./PersonalLoanComponent.css";
+// import { MdSpeed, MdLock } from "react-icons/md";
+
+// const PersonalLoanComponent = () => {
+//   const [loanPurpose, setLoanPurpose] = useState("");
+//   const [error, setError] = useState(false); // To track validation errors
+//   const navigate = useNavigate();
+
+//   const handleContinue = () => {
+//     if (!loanPurpose) {
+//       // If no loan purpose is selected, show an error
+//       setError(true);
+//       return;
+//     }
+//     setError(false);
+//     navigate("/first");
+//   };
+
+//   return (
+//     <div className="personal-loan-container">
+//       <div className="personal-loan-progress-bar"></div>
+//       <h2 className="personal-loan-subheading">PERSONAL LOAN</h2>
+//       <h1 className="personal-loan-main-title">Select a loan purpose?</h1>
+//       <div className="personal-loan-form-section">
+//         <label htmlFor="loanPurpose" className="personal-loan-label">
+//           Select a Loan Purpose
+//         </label>
+//         <select
+//           id="loanPurpose"
+//           className="personal-loan-dropdown"
+//           value={loanPurpose}
+//           onChange={(e) => setLoanPurpose(e.target.value)}
+//         >
+//           <option value="">Choose...</option>
+//           <option value="Debt Consolidation">Debt Consolidation</option>
+//           <option value="Personal Use">Personal Use</option>
+//           <option value="Pay Off Credit Cards">Pay Off Credit Cards</option>
+//           <option value="Home Improvement">Home Improvement</option>
+//           <option value="Home Buying">Home Buying</option>
+//           <option value="Major Purchase">Major Purchase</option>
+//           <option value="Car Financing">Car Financing</option>
+//           <option value="Business">Business</option>
+//           <option value="Vacation">Vacation</option>
+//           <option value="Wedding Expenses">Wedding Expenses</option>
+//           <option value="Moving and Relocation">Moving and Relocation</option>
+//           <option value="Medical Expenses">Medical Expenses</option>
+//           <option value="Car Repair">Car Repair</option>
+//           <option value="Everyday Bills">Everyday Bills</option>
+//           <option value="Other">Other</option>
+//         </select>
+//         {error && (
+//           <p className="error-message" style={{ color: "red" }}>
+//             Please select a loan purpose!
+//           </p>
+//         )}
+
+//         <button
+//           className="personal-loan-submit-button"
+//           onClick={handleContinue}
+//         >
+//           Continue
+//         </button>
+//       </div>
+//       <div className="personal-loan-information">
+//         <p className="personal-loan-info-item">
+//           <MdLock size={20} /> Your information is securely encrypted
+//         </p>
+//         <p className="personal-loan-info-item">
+//           <MdSpeed size={20} /> No Impact to your credit score
+//         </p>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default PersonalLoanComponent;
+
+
+
+
+
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./PersonalLoanComponent.css";
-import { MdSpeed, MdLock } from 'react-icons/md';
-
+import { MdSpeed, MdLock } from "react-icons/md";
 
 const PersonalLoanComponent = () => {
+  const [loanPurpose, setLoanPurpose] = useState("");
   const navigate = useNavigate();
-  const handleContinue = () => {
-    navigate('/first');
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent default form submission
+    if (!loanPurpose) {
+      alert("Please select a loan purpose!");
+      return;
+    }
+    navigate("/first");
   };
 
   return (
@@ -339,11 +429,20 @@ const PersonalLoanComponent = () => {
       <div className="personal-loan-progress-bar"></div>
       <h2 className="personal-loan-subheading">PERSONAL LOAN</h2>
       <h1 className="personal-loan-main-title">Select a loan purpose?</h1>
-      <div className="personal-loan-form-section">
-        <label htmlFor="loanPurpose" className="personal-loan-label">Select a Loan Purpose</label>
-        <select id="loanPurpose" className="personal-loan-dropdown">
-        <option value="Debt Consolidation">Choose..</option>
+      <form className="personal-loan-form-section" onSubmit={handleSubmit}>
+        <label htmlFor="loanPurpose" className="personal-loan-label">
+          Select a Loan Purpose
+        </label>
+        <select
+          id="loanPurpose"
+          className="personal-loan-dropdown"
+          value={loanPurpose}
+          onChange={(e) => setLoanPurpose(e.target.value)}
+          required
+        >
+          <option value="">Choose...</option>
           <option value="Debt Consolidation">Debt Consolidation</option>
+          <option value="Personal Use">Personal Use</option>
           <option value="Pay Off Credit Cards">Pay Off Credit Cards</option>
           <option value="Home Improvement">Home Improvement</option>
           <option value="Home Buying">Home Buying</option>
@@ -358,20 +457,21 @@ const PersonalLoanComponent = () => {
           <option value="Everyday Bills">Everyday Bills</option>
           <option value="Other">Other</option>
         </select>
-        <button className="personal-loan-submit-button"
-          onClick={handleContinue}>
+
+        <button type="submit" className="personal-loan-submit-button">
           Continue
         </button>
-      </div>
+      </form>
       <div className="personal-loan-information">
-        <p className="personal-loan-info-item"> <MdLock size={20} /> Your information is securely encrypted</p>
-        <p className="personal-loan-info-item"><MdSpeed size={20} /> No Impact to your credit score</p>
+        <p className="personal-loan-info-item">
+          <MdLock size={20} /> Your information is securely encrypted
+        </p>
+        <p className="personal-loan-info-item">
+          <MdSpeed size={20} /> No Impact to your credit score
+        </p>
       </div>
-
     </div>
-
   );
 };
 
 export default PersonalLoanComponent;
-

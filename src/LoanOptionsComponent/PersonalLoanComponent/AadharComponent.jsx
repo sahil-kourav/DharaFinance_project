@@ -3,38 +3,37 @@ import { useNavigate } from "react-router-dom";
 import "./PersonalLoanComponent.css";
 import { MdSpeed, MdLock } from "react-icons/md";
 
-const TwelfthPL = () => {
+const AadharComponent = () => {
   const navigate = useNavigate();
-  const [phoneNumber, setPhoneNumber] = useState(""); // Track phone number input
+  const [aadharNumber, setAadharNumber] = useState("");
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
+    e.preventDefault();
 
-    // Validate phone number (must be 10 digits)
-    if (phoneNumber.trim().length !== 10 || isNaN(phoneNumber)) {
-      alert("Please enter a valid 10-digit phone number!");
-      return;
-    }
+    if (aadharNumber.trim().length !== 12 || isNaN(aadharNumber)) {
+        alert("Please enter a valid 12-digit aadhar number!");
+        return;
+      }
 
-    navigate("/email"); // Proceed to the next question if validation passes
+    navigate("/check-details");
   };
 
   return (
     <div className="personal-loan-container">
       <div className="personal-loan-progress-bar"></div>
       <h2 className="personal-loan-subheading">PERSONAL LOAN</h2>
-      <h1 className="personal-loan-main-title">What's your phone number?</h1>
+      <h1 className="personal-loan-main-title">What's your 12 digit Aadhar number?</h1>
       <form className="personal-loan-form-section" onSubmit={handleSubmit}>
-        <label htmlFor="phoneNumber" className="personal-loan-label">
-          Phone Number
+        <label htmlFor="aadharNumber" className="personal-loan-label">
+       Aadhar number
         </label>
         <input
-          type="text" // Changed to "text" to ensure proper validation of number length
-          id="phoneNumber"
+          type="number"
+          id="aadharNumber"
           className="personal-loan-input"
-          value={phoneNumber}
-          onChange={(e) => setPhoneNumber(e.target.value)}
-          placeholder="📞 Enter your contact number"
+          value={aadharNumber}
+          onChange={(e) => setAadharNumber(e.target.value)}
+          placeholder="Enter your aadhar number"
           required
         />
         <button type="submit" className="personal-loan-submit-button">
@@ -53,4 +52,4 @@ const TwelfthPL = () => {
   );
 };
 
-export default TwelfthPL;
+export default AadharComponent;

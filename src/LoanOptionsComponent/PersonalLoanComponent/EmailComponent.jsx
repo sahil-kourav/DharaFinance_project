@@ -3,39 +3,37 @@ import { useNavigate } from "react-router-dom";
 import "./PersonalLoanComponent.css";
 import { MdSpeed, MdLock } from "react-icons/md";
 
-const ThirdPL = () => {
-  const [dateOfBirth, setDateOfBirth] = useState("");
+const EmailComponent = () => {
   const navigate = useNavigate();
+  const [email, setEmail] = useState("");
 
-  const handleContinue = () => {
-    if (!dateOfBirth) {
-      alert("Please enter your date of birth!");
-      return;
-    }
-    navigate("/fourth");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    navigate("/aadhar");
   };
 
   return (
     <div className="personal-loan-container">
       <div className="personal-loan-progress-bar"></div>
       <h2 className="personal-loan-subheading">PERSONAL LOAN</h2>
-      <h1 className="personal-loan-main-title">What's your date of birth?</h1>
-      <div className="personal-loan-form-section">
-        <label htmlFor="dob" className="personal-loan-label">
-        MM/DD/YYYY
+      <h1 className="personal-loan-main-title">What's your email address?</h1>
+      <form className="personal-loan-form-section" onSubmit={handleSubmit}>
+        <label htmlFor="email" className="personal-loan-label">
+          Email
         </label>
         <input
-          type="date"
-          id="dob"
+          type="email"
+          id="email"
           className="personal-loan-input"
-          value={dateOfBirth}
-          onChange={(e) => setDateOfBirth(e.target.value)}
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Enter your email id"
           required
         />
-        <button className="personal-loan-submit-button" onClick={handleContinue}>
+        <button type="submit" className="personal-loan-submit-button">
           Continue
         </button>
-      </div>
+      </form>
       <div className="personal-loan-information">
         <p className="personal-loan-info-item">
           <MdLock size={20} /> Your information is securely encrypted
@@ -48,4 +46,4 @@ const ThirdPL = () => {
   );
 };
 
-export default ThirdPL;
+export default EmailComponent;

@@ -23,7 +23,7 @@ const LoanOptions = () => {
   const [showComparison, setShowComparison] = useState(false);
 
   const handleCompareClick = () => {
-    setShowComparison(true);  // Show the comparison section when clicked
+    setShowComparison(true);  
   };
   return (
     <>
