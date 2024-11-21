@@ -9,7 +9,6 @@ import AboutUsPage from './AboutUs/AboutUs';
 import ShowData from './ShowDataComponent/ShowData';
 import ServicesPage from './ServicesComponent/ServicesPage';
 import LoanOptions from './LoanOptionsComponent/LoanOptions';
-import PersonalLoanComponent from './LoanOptionsComponent/PersonalLoanComponent'; 
 import StudentLoanComponent from './LoanOptionsComponent/StudentLoanComponent';
 import CreditCardComponent from './LoanOptionsComponent/CreditCardComponent';
 import CreditScoreComponent from './LoanOptionsComponent/CreditScoreComponent';
@@ -17,6 +16,20 @@ import InsuranceComponent from './LoanOptionsComponent/InsuranceComponent';
 import HomePurchaseComponent from './LoanOptionsComponent/HomePurchaseComponent';
 import AutoLoanComponent from './LoanOptionsComponent/AutoLoanComponent';
 import LoanResultComponent from './LoanOptionsComponent/LoanResultComponent';
+import PersonalLoanComponent from './LoanOptionsComponent/PersonalLoanComponent/PersonalLoanComponent';
+import FirstPL from "./LoanOptionsComponent/PersonalLoanComponent/FirstPL";
+import SecondPL from "./LoanOptionsComponent/PersonalLoanComponent/SecondPL";
+import ThirdPL from "./LoanOptionsComponent/PersonalLoanComponent/ThirdPL";
+import FourthPL from "./LoanOptionsComponent/PersonalLoanComponent/FourthPL"; 
+import FifthPL from "./LoanOptionsComponent/PersonalLoanComponent/FifthPL"; 
+import SixthPL from "./LoanOptionsComponent/PersonalLoanComponent/SixthPL"; 
+import SeventhPL from "./LoanOptionsComponent/PersonalLoanComponent/SeventhPL"; 
+import EightPL from "./LoanOptionsComponent/PersonalLoanComponent/EightPL"; 
+import NinthPL from "./LoanOptionsComponent/PersonalLoanComponent/NinthPL"; 
+import TenthPL from "./LoanOptionsComponent/PersonalLoanComponent/TenthPL"; 
+import EleventhPL from "./LoanOptionsComponent/PersonalLoanComponent/EleventhPL"; 
+import TwelfthPL from "./LoanOptionsComponent/PersonalLoanComponent/TwelfthPL"; 
+
 
 const App = () => {       
   const location = useLocation(); 
@@ -39,6 +52,18 @@ const App = () => {
         <Route path="/insurance" element={<InsuranceComponent />} />
         <Route path="/auto-loans" element={<AutoLoanComponent />} />
         <Route path="/credit-score" element={<CreditScoreComponent />} />
+        <Route path="/first" element={<FirstPL />} />
+      <Route path="/second" element={<SecondPL />} />
+      <Route path="/third" element={<ThirdPL />} />
+      <Route path="/fourth" element={<FourthPL />} />
+      <Route path="/fifth" element={<FifthPL />} />
+      <Route path="/sixth" element={<SixthPL />} />
+      <Route path="/seventh" element={<SeventhPL />} />
+      <Route path="/eight" element={<EightPL />} />
+      <Route path="/ninth" element={<NinthPL />} />
+      <Route path="/tenth" element={<TenthPL />} />
+      <Route path="/eleventh" element={<EleventhPL />} />
+      <Route path="/twelfth" element={<TwelfthPL />} />
       </Routes>
 
       <Footer />

@@ -1,0 +1,168 @@
+/* .loan-calculator-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .loan-heading{
+    color: #81412d;
+    font-weight: 600;
+    margin-top: -10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+  }
+  
+  .loan-section-title {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #343a40;
+  }
+  
+  .result-card {
+    background-color: #e9f7ef;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+  }
+  
+  .display-4 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    padding: 2rem;
+  }
+  
+ .submit-loan-detail {
+    font-size: 1.1rem;
+    color: white;
+    padding: 7px;
+    width: 100%;
+  }
+  
+  .alert {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 0.25rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .loan-calculator-container {
+      padding: 10px;
+    }
+  }
+   */
+
+
+
+
+/* General Reset */
+/* Personal Loan Container */
+.personal-loan-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  max-width: 600px;
+  height: 600px;
+  margin: 0px auto;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress Bar */
+.personal-loan-progress-bar {
+  height: 4px;
+  width: 50px;
+  background-color: #00c853;
+  margin: 50px auto 20px;
+}
+
+/* Headings */
+.personal-loan-subheading {
+  color: #2c3e50;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.personal-loan-main-title {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 2.6rem;
+}
+
+/* Form Section */
+.personal-loan-form-section {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 1.2rem;
+}
+
+.personal-loan-label {
+  text-align: left;
+  display: block;
+  font-size: 16px;
+  color: #616c6d;
+  margin-left: 3px;
+  margin-bottom: 5px;
+}
+
+.personal-loan-dropdown {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  margin-bottom: 1.3rem;
+}
+
+/* Button */
+.personal-loan-submit-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 50px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  cursor: pointer;
+}
+
+.personal-loan-submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Information Section */
+.personal-loan-information {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #1d1b1b;
+}
+
+.personal-loan-info-item {
+  margin: 0.2rem 7.3rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+}

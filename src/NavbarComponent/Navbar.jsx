@@ -122,7 +122,7 @@ const Navbar = () => {
       <nav className={`navbar ${isNavbarActive ? "active" : ""}`}>
         <ul className="navbar-nav">
           <li className="nav-item">
-            <NavLink exact className="nav-link" activeClassName="active" to="/">
+            <NavLink  className="nav-link" activeClassName="active" to="/">
               Home
             </NavLink>
           </li>
