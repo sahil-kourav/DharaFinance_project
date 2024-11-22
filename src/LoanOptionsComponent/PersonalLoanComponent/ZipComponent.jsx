@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./PersonalLoanComponent.css";
 import { MdSpeed, MdLock } from 'react-icons/md';
 
-const NinthPL = () => {
+const ZipComponent = () => {
   const [zipCode, setZipCode] = useState("");  // Track ZIP code input
   const navigate = useNavigate();
 
@@ -21,7 +21,7 @@ const NinthPL = () => {
     }
     
     // If input is valid, navigate to the next page
-    navigate('/tenth');
+    navigate('/address');
   };
   
   return (
@@ -51,4 +51,4 @@ const NinthPL = () => {
   );
 };
 
-export default NinthPL;
+export default ZipComponent;

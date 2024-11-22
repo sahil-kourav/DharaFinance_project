@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./PersonalLoanComponent.css";
 import { MdSpeed, MdLock } from "react-icons/md";
 
-const ThirdPL = () => {
+const DOBComponent = () => {
   const [dateOfBirth, setDateOfBirth] = useState("");
   const navigate = useNavigate();
 
@@ -12,7 +12,7 @@ const ThirdPL = () => {
       alert("Please enter your date of birth!");
       return;
     }
-    navigate("/fourth");
+    navigate("/rent-home");
   };
 
   return (
@@ -48,4 +48,4 @@ const ThirdPL = () => {
   );
 };
 
-export default ThirdPL;
+export default DOBComponent;

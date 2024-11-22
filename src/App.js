@@ -17,18 +17,18 @@ import HomePurchaseComponent from './LoanOptionsComponent/HomePurchaseComponent'
 import AutoLoanComponent from './LoanOptionsComponent/AutoLoanComponent';
 import LoanResultComponent from './LoanOptionsComponent/LoanResultComponent';
 import PersonalLoanComponent from './LoanOptionsComponent/PersonalLoanComponent/PersonalLoanComponent';
-import FirstPL from "./LoanOptionsComponent/PersonalLoanComponent/FirstPL";
-import SecondPL from "./LoanOptionsComponent/PersonalLoanComponent/SecondPL";
-import ThirdPL from "./LoanOptionsComponent/PersonalLoanComponent/ThirdPL";
-import FourthPL from "./LoanOptionsComponent/PersonalLoanComponent/FourthPL"; 
-import FifthPL from "./LoanOptionsComponent/PersonalLoanComponent/FifthPL"; 
-import SixthPL from "./LoanOptionsComponent/PersonalLoanComponent/SixthPL"; 
-import SeventhPL from "./LoanOptionsComponent/PersonalLoanComponent/SeventhPL"; 
-import EightPL from "./LoanOptionsComponent/PersonalLoanComponent/EightPL"; 
-import NinthPL from "./LoanOptionsComponent/PersonalLoanComponent/NinthPL"; 
-import TenthPL from "./LoanOptionsComponent/PersonalLoanComponent/TenthPL"; 
-import EleventhPL from "./LoanOptionsComponent/PersonalLoanComponent/EleventhPL"; 
-import TwelfthPL from "./LoanOptionsComponent/PersonalLoanComponent/TwelfthPL"; 
+import LoanAmountComponent from "./LoanOptionsComponent/PersonalLoanComponent/LoanAmountComponent";
+import MoneyComponent from "./LoanOptionsComponent/PersonalLoanComponent/MoneyComponent";
+import DOBComponent from "./LoanOptionsComponent/PersonalLoanComponent/DOBComponent";
+import RentHomeComponent from "./LoanOptionsComponent/PersonalLoanComponent/RentHomeComponent"; 
+import CreditComponent from "./LoanOptionsComponent/PersonalLoanComponent/CreditComponent"; 
+import EmploymentComponent from "./LoanOptionsComponent/PersonalLoanComponent/EmploymentComponent"; 
+import AnnualIncomeComponent from "./LoanOptionsComponent/PersonalLoanComponent/AnnualIncomeComponent"; 
+import QualificationComponent from "./LoanOptionsComponent/PersonalLoanComponent/QualificationComponent"; 
+import ZipComponent from "./LoanOptionsComponent/PersonalLoanComponent/ZipComponent"; 
+import AddressComponent from "./LoanOptionsComponent/PersonalLoanComponent/AddressComponent"; 
+import NameComponent from "./LoanOptionsComponent/PersonalLoanComponent/NameComponent"; 
+import PhoneComponent from "./LoanOptionsComponent/PersonalLoanComponent/PhoneComponent"; 
 import EmailComponent from "./LoanOptionsComponent/PersonalLoanComponent/EmailComponent";
 import AadharComponent from "./LoanOptionsComponent/PersonalLoanComponent/AadharComponent";
 import CheckDetailsComponent from "./LoanOptionsComponent/PersonalLoanComponent/CheckDetailsComponent";
@@ -55,18 +55,18 @@ const App = () => {
         <Route path="/insurance" element={<InsuranceComponent />} />
         <Route path="/auto-loans" element={<AutoLoanComponent />} />
         <Route path="/credit-score" element={<CreditScoreComponent />} />
-        <Route path="/first" element={<FirstPL />} />
-      <Route path="/second" element={<SecondPL />} />
-      <Route path="/third" element={<ThirdPL />} />
-      <Route path="/fourth" element={<FourthPL />} />
-      <Route path="/fifth" element={<FifthPL />} />
-      <Route path="/sixth" element={<SixthPL />} />
-      <Route path="/seventh" element={<SeventhPL />} />
-      <Route path="/eight" element={<EightPL />} />
-      <Route path="/ninth" element={<NinthPL />} />
-      <Route path="/tenth" element={<TenthPL />} />
-      <Route path="/eleventh" element={<EleventhPL />} />
-      <Route path="/twelfth" element={<TwelfthPL />} />
+        <Route path="/loan-amount" element={<LoanAmountComponent />} />
+      <Route path="/need-money" element={<MoneyComponent />} />
+      <Route path="/dob" element={<DOBComponent />} />
+      <Route path="/rent-home" element={<RentHomeComponent />} />
+      <Route path="/credit" element={<CreditComponent />} />
+      <Route path="/employment-status" element={<EmploymentComponent />} />
+      <Route path="/annual-income" element={<AnnualIncomeComponent />} />
+      <Route path="/qualification" element={<QualificationComponent />} />
+      <Route path="/zip-code" element={<ZipComponent />} />
+      <Route path="/address" element={<AddressComponent />} />
+      <Route path="/full-name" element={<NameComponent />} />
+      <Route path="/phone" element={<PhoneComponent />} />
 
       <Route path="/check-details" element={<CheckDetailsComponent />} />
       <Route path="/aadhar" element={<AadharComponent />} />

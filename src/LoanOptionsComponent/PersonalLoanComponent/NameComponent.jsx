@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./PersonalLoanComponent.css";
 import { MdSpeed, MdLock } from 'react-icons/md';
 
-const EleventhPL = () => {
+const NameComponent = () => {
   const [firstName, setFirstName] = useState(""); // Track street address input
   const [lastName, setLastName] = useState(""); // Track city input
   const navigate = useNavigate();
@@ -23,7 +23,7 @@ const EleventhPL = () => {
       return;
     }
 
-    navigate("/twelfth");
+    navigate("/phone");
   };
 
   return (
@@ -71,5 +71,5 @@ const EleventhPL = () => {
     </div>
   );
 };
-export default EleventhPL;
+export default NameComponent;
 

@@ -421,7 +421,7 @@ const PersonalLoanComponent = () => {
       alert("Please select a loan purpose!");
       return;
     }
-    navigate("/first");
+    navigate("/loan-amount");
   };
 
   return (

@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./PersonalLoanComponent.css";
 import { MdSpeed, MdLock } from 'react-icons/md';
 
-const SeventhPL = () => {
+const AnnualIncomeComponent = () => {
   const [loanPurpose, setLoanPurpose] = useState("");
   const navigate = useNavigate();
 
@@ -14,7 +14,7 @@ const SeventhPL = () => {
       alert("Please enter a valid annual income!");
       return;
     }
-    navigate('/eight');
+    navigate('/qualification');
   };
   return (
     <div className="personal-loan-container">
@@ -58,5 +58,5 @@ const SeventhPL = () => {
     </div>
   );
 };
-export default SeventhPL;
+export default AnnualIncomeComponent;
 

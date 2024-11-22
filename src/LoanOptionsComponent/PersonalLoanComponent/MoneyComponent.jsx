@@ -1,16 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./PersonalLoanComponent.css";
 import { MdSpeed, MdLock } from "react-icons/md";
 
-const SecondPL = () => {
+const MoneyComponent = () => {
   const navigate = useNavigate();
 
   const handleSelection = (option) => {
-    // Log the selected option for debugging
     console.log(`Selected option: ${option}`);
-    // Navigate to the next page with the selected option
-    navigate("/third", { state: { selectedOption: option } });
+    navigate("/dob", { state: { selectedOption: option } });
   };
 
   return (
@@ -41,4 +39,4 @@ const SecondPL = () => {
   );
 };
 
-export default SecondPL;
+export default MoneyComponent; 

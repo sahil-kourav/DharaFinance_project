@@ -4,13 +4,13 @@ import { useNavigate } from "react-router-dom";
 import "./PersonalLoanComponent.css";
 import { MdSpeed, MdLock } from 'react-icons/md';
 
-const SixthPL = () => {
+const EmploymentComponent = () => {
   const navigate = useNavigate();
 
   const handleSelection = (option) => {
    console.log(`Selected option: ${option}`);
 
-    navigate('/seventh');
+    navigate('/annual-income');
   };
   return (
     <div className="personal-loan-container">
@@ -37,5 +37,5 @@ const SixthPL = () => {
   );
 };
 
-export default SixthPL;
+export default EmploymentComponent;
 
