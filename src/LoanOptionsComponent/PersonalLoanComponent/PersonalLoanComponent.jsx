@@ -89,63 +89,8 @@
 //                       />
 //                     </Form.Group>
 //                   </Col>
-//                   <Col md={6}>
-//                     <Form.Group controlId="monthlyIncome" className="mb-3">
-//                       <Form.Label>Monthly Income*</Form.Label>
-//                       <Form.Control
-//                         type="number"
-//                         placeholder="Enter your monthly income"
-//                         value={monthlyIncome}
-//                         onChange={(e) => setMonthlyIncome(e.target.value)}
-//                         required
-//                       />
-//                     </Form.Group>
-//                   </Col>
-//                 </Row>
-//                 <Row>
-//                   <Col md={6}>
-//                     <Form.Group controlId="employmentStatus" className="mb-3">
-//                       <Form.Label>Employment Status*</Form.Label>
-//                       <Form.Control
-//                         as="select"
-//                         value={employmentStatus}
-//                         onChange={(e) => setEmploymentStatus(e.target.value)}
-//                         required
-//                       >
-//                         <option value="">Select Employment Status</option>
-//                         <option value="Employed">Employed</option>
-//                         <option value="Self-Employed">Self-Employed</option>
-//                         <option value="Unemployed">Unemployed</option>
-//                       </Form.Control>
-//                     </Form.Group>
-//                   </Col>
-//                   <Col md={6}>
-//                     <Form.Group controlId="location" className="mb-3">
-//                       <Form.Label>Location/Zip Code (Optional)</Form.Label>
-//                       <Form.Control
-//                         type="text"
-//                         placeholder="Enter location or zip code"
-//                         value={location}
-//                         onChange={(e) => setLocation(e.target.value)}
-//                       />
-//                     </Form.Group>
-//                   </Col>
-//                 </Row>
 
-//                 <h3 className="loan-section-title">Loan Details</h3>
-//                 <Row>
-//                   <Col md={6}>
-//                     <Form.Group controlId="loanAmount" className="mb-3">
-//                       <Form.Label>Loan Amount*</Form.Label>
-//                       <Form.Control
-//                         type="number"
-//                         placeholder="Enter loan amount"
-//                         value={loanAmount}
-//                         onChange={(e) => setLoanAmount(e.target.value)}
-//                         required
-//                       />
-//                     </Form.Group>
-//                   </Col>
+
 //                   <Col md={6}>
 //                     <Form.Group controlId="interestRate" className="mb-3">
 //                       <Form.Label>Interest Rate* (%)</Form.Label>
@@ -407,11 +352,12 @@
 
 
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./PersonalLoanComponent.css";
 import { MdSpeed, MdLock } from "react-icons/md";
 
 const PersonalLoanComponent = () => {
+  const { state } = useLocation();
   const [loanPurpose, setLoanPurpose] = useState("");
   const navigate = useNavigate();
 
@@ -421,12 +367,13 @@ const PersonalLoanComponent = () => {
       alert("Please select a loan purpose!");
       return;
     }
-    navigate("/loan-amount");
+    navigate("/loan-amount", { state: { ...state, loanPurpose } });
   };
 
   return (
     <div className="personal-loan-container">
       <div className="personal-loan-progress-bar"></div>
+      <h2 className="personal-loan-subtitle">Explore Your Loan Eligibility Journey</h2>
       <h2 className="personal-loan-subheading">PERSONAL LOAN</h2>
       <h1 className="personal-loan-main-title">Select a loan purpose?</h1>
       <form className="personal-loan-form-section" onSubmit={handleSubmit}>

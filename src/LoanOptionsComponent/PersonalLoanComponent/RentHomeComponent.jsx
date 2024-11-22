@@ -1,16 +1,19 @@
 
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React, {useState} from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./PersonalLoanComponent.css";
 import { MdSpeed, MdLock } from 'react-icons/md';
 
 const RentHomeComponent = () => {
     const navigate = useNavigate();
+    const [rentHome, setRentHome] = useState(""); 
+    const { state } = useLocation();
 
     const handleSelection = (option) => {
+      setRentHome(option);
       // Log the selected option for debugging
       console.log(`Selected option: ${option}`);
-      navigate('/credit');
+      navigate('/credit' ,{ state: { ...state, rentHome: option } });
     };
   return (
     <div className="personal-loan-container">

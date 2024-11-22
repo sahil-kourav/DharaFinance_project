@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation  } from "react-router-dom";
 import "./PersonalLoanComponent.css";
 import { MdSpeed, MdLock } from 'react-icons/md';
 
 const ZipComponent = () => {
+  const { state } = useLocation();
   const [zipCode, setZipCode] = useState("");  // Track ZIP code input
   const navigate = useNavigate();
 
@@ -21,7 +22,7 @@ const ZipComponent = () => {
     }
     
     // If input is valid, navigate to the next page
-    navigate('/address');
+    navigate('/address', { state: { ...state, zipCode } });
   };
   
   return (

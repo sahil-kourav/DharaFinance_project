@@ -1,16 +1,19 @@
 
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React, {useState} from "react";
+import { useNavigate,useLocation } from "react-router-dom";
 import "./PersonalLoanComponent.css";
 import { MdSpeed, MdLock } from 'react-icons/md';
 
 const EmploymentComponent = () => {
   const navigate = useNavigate();
+  const { state } = useLocation();
+  const [employmentStatus, setEmploymentStatus] = useState(""); 
 
   const handleSelection = (option) => {
+    setEmploymentStatus(option);
    console.log(`Selected option: ${option}`);
 
-    navigate('/annual-income');
+    navigate('/annual-income', { state: { ...state, employmentStatus: option } });
   };
   return (
     <div className="personal-loan-container">

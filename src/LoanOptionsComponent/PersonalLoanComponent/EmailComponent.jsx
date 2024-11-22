@@ -1,15 +1,16 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./PersonalLoanComponent.css";
 import { MdSpeed, MdLock } from "react-icons/md";
 
 const EmailComponent = () => {
   const navigate = useNavigate();
+  const { state } = useLocation();
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate("/aadhar");
+    navigate("/aadhar", { state: { ...state, email } });
   };
 
   return (

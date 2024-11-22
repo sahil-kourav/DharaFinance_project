@@ -1,14 +1,17 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./PersonalLoanComponent.css";
 import { MdSpeed, MdLock } from "react-icons/md";
 
 const MoneyComponent = () => {
+  const { state } = useLocation();
+  const [needMoney, setNeedMoney] = useState("");
   const navigate = useNavigate();
 
   const handleSelection = (option) => {
+    setNeedMoney(option);
     console.log(`Selected option: ${option}`);
-    navigate("/dob", { state: { selectedOption: option } });
+    navigate("/dob", { state: { ...state, needMoney: option  } });
   };
 
   return (

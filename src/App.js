@@ -18,6 +18,7 @@ import AutoLoanComponent from './LoanOptionsComponent/AutoLoanComponent';
 import LoanResultComponent from './LoanOptionsComponent/LoanResultComponent';
 import PersonalLoanComponent from './LoanOptionsComponent/PersonalLoanComponent/PersonalLoanComponent';
 import LoanAmountComponent from "./LoanOptionsComponent/PersonalLoanComponent/LoanAmountComponent";
+import LoanDurationComponent from "./LoanOptionsComponent/PersonalLoanComponent/LoanDurationComponent";
 import MoneyComponent from "./LoanOptionsComponent/PersonalLoanComponent/MoneyComponent";
 import DOBComponent from "./LoanOptionsComponent/PersonalLoanComponent/DOBComponent";
 import RentHomeComponent from "./LoanOptionsComponent/PersonalLoanComponent/RentHomeComponent"; 
@@ -56,6 +57,8 @@ const App = () => {
         <Route path="/auto-loans" element={<AutoLoanComponent />} />
         <Route path="/credit-score" element={<CreditScoreComponent />} />
         <Route path="/loan-amount" element={<LoanAmountComponent />} />
+        <Route path="/loan-duration" element={<LoanDurationComponent />} />
+
       <Route path="/need-money" element={<MoneyComponent />} />
       <Route path="/dob" element={<DOBComponent />} />
       <Route path="/rent-home" element={<RentHomeComponent />} />

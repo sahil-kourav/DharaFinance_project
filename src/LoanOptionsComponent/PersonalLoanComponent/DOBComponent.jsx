@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./PersonalLoanComponent.css";
 import { MdSpeed, MdLock } from "react-icons/md";
 
 const DOBComponent = () => {
+  const { state } = useLocation();
   const [dateOfBirth, setDateOfBirth] = useState("");
   const navigate = useNavigate();
 
@@ -12,7 +13,7 @@ const DOBComponent = () => {
       alert("Please enter your date of birth!");
       return;
     }
-    navigate("/rent-home");
+    navigate("/rent-home", { state: { ...state, dateOfBirth } });
   };
 
   return (

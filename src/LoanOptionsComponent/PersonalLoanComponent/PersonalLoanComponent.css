@@ -215,6 +215,14 @@
   background-color: #0056b3;
 }
 
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 0px;
+}
+
+
 /* Information Section */
 .personal-loan-information {
   margin-top: 1.5rem;
@@ -226,4 +234,114 @@
   margin: 0.2rem 7.3rem;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: left;
+}
+
+
+
+
+/* -----     ------ */
+/* Basic styling for the container */
+.loan-details-container {
+  max-width: 750px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+/* Title styling */
+.loan-details-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+/* Summary Section styling */
+.loan-details-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+/* Each item in the details list */
+.loan-details-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling for strong tags */
+.data-label {
+  font-weight: bold;
+  color: #34495e;
+}
+
+/* Value styling for the data */
+.data-value {
+  font-weight: normal;
+  color: #7f8c8d;
+  word-wrap: break-word;
+}
+
+/* Confirm button styling */
+.loan-details-actions {
+  text-align: center;
+}
+
+.confirm-btn {
+  background-color: #27ae60;
+  color: white;
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirm-btn:hover {
+  background-color: #2ecc71;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .loan-details-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .loan-details-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .loan-details-container {
+    padding: 15px;
+  }
+
+  .loan-details-title {
+    font-size: 24px;
+  }
+
+  .data-label {
+    font-size: 14px;
+  }
+
+  .data-value {
+    font-size: 14px;
+  }
+
+  .confirm-btn {
+    width: 100%;
+  }
 }

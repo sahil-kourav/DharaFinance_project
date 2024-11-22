@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./PersonalLoanComponent.css";
 import { MdSpeed, MdLock } from "react-icons/md";
 
 const AadharComponent = () => {
+  const { state } = useLocation();
   const navigate = useNavigate();
   const [aadharNumber, setAadharNumber] = useState("");
 
@@ -15,7 +16,7 @@ const AadharComponent = () => {
         return;
       }
 
-    navigate("/check-details");
+    navigate("/check-details", { state: { ...state, aadharNumber } });
   };
 
   return (

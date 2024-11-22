@@ -1,16 +1,19 @@
 
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React, {useState} from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./PersonalLoanComponent.css";
 import { MdSpeed, MdLock } from 'react-icons/md';
 
   const QualificationComponent = () => {
+    const { state } = useLocation();
+    const [education, setEducation] = useState("");
     const navigate = useNavigate();
 
     const handleSelection = (option) => {
+      setEducation(option);
       console.log(`Selected option: ${option}`);
 
-      navigate('/zip-code');
+      navigate('/zip-code', { state: { ...state, education: option } });
     };        
   return (
     <div className="personal-loan-container">

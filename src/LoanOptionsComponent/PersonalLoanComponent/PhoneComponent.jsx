@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./PersonalLoanComponent.css";
 import { MdSpeed, MdLock } from "react-icons/md";
 
 const PhoneComponent = () => {
+  const { state } = useLocation();
   const navigate = useNavigate();
   const [phoneNumber, setPhoneNumber] = useState(""); // Track phone number input
 
@@ -16,7 +17,7 @@ const PhoneComponent = () => {
       return;
     }
 
-    navigate("/email"); // Proceed to the next question if validation passes
+    navigate("/email", { state: { ...state, phoneNumber } }); // Proceed to the next question if validation passes
   };
 
   return (

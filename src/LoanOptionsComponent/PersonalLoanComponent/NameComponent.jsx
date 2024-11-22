@@ -1,10 +1,11 @@
 
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./PersonalLoanComponent.css";
 import { MdSpeed, MdLock } from 'react-icons/md';
 
 const NameComponent = () => {
+  const { state } = useLocation();
   const [firstName, setFirstName] = useState(""); // Track street address input
   const [lastName, setLastName] = useState(""); // Track city input
   const navigate = useNavigate();
@@ -23,7 +24,7 @@ const NameComponent = () => {
       return;
     }
 
-    navigate("/phone");
+    navigate("/phone", { state: { ...state, firstName, lastName } }); 
   };
 
   return (

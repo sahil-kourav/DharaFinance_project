@@ -1,20 +1,21 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation  } from "react-router-dom";
 import "./PersonalLoanComponent.css";
 import { MdSpeed, MdLock } from "react-icons/md";
 
 const LoanAmountComponent = () => {
+  const { state } = useLocation(); // Accessing previous component's state
   const [loanAmount, setLoanAmount] = useState("");  // Track loan amount input
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent form from submitting by default
-    if (!loanAmount || isNaN(loanAmount) || loanAmount <= 0) {
+    if (!loanAmount || loanAmount <= 0) {
       // Validate if loan amount is provided and is a positive number
       alert("Please enter a valid loan amount!");
       return;
     }
-    navigate("/need-money");  // Redirect if validation passes
+    navigate("/loan-duration", { state: { ...state, loanAmount } });  // Redirect if validation passes
   };
 
   return (
