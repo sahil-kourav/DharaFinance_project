@@ -28,6 +28,32 @@ const CheckDetailsComponent = () => {
     zipCode,
   } = state;
 
+  // Navigate to Loan Calculation page on button click
+  const handleNavigate = () => {
+    navigate("/loan-calculation", {
+      state: {
+        loanPurpose,
+        loanAmount,
+        loanDuration,
+        aadharNumber,
+        street,
+        city,
+        annualIncome,
+        creditScore,
+        dateOfBirth,
+        email,
+        employmentStatus,
+        needMoney,
+        firstName,
+        lastName,
+        phoneNumber,
+        education,
+        rentHome,
+        zipCode,
+      },
+    });
+  };
+
   return (
     <div className="loan-details-container">
       <h1 className="loan-details-title">Verify Your Loan Information</h1>
@@ -105,8 +131,8 @@ const CheckDetailsComponent = () => {
           <span className="data-value">{zipCode}</span>
         </div>
       </div>
-      <div className="loan-details-actions" style={{width: '400px', margin: '0 auto'}}>
-          <button type="submit" className="personal-loan-submit-button">
+      <div className="loan-details-actions" style={{ width: "400px", margin: "0 auto" }}>
+        <button type="button" className="personal-loan-submit-button" onClick={handleNavigate}>
           Confirm and Apply
         </button>
       </div>

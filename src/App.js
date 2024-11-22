@@ -33,7 +33,8 @@ import PhoneComponent from "./LoanOptionsComponent/PersonalLoanComponent/PhoneCo
 import EmailComponent from "./LoanOptionsComponent/PersonalLoanComponent/EmailComponent";
 import AadharComponent from "./LoanOptionsComponent/PersonalLoanComponent/AadharComponent";
 import CheckDetailsComponent from "./LoanOptionsComponent/PersonalLoanComponent/CheckDetailsComponent";
-
+import LoanCalculationComponent from "./LoanOptionsComponent/PersonalLoanComponent/LoanCalculationComponent";
+import PoorCreditComponent from "./LoanOptionsComponent/PersonalLoanComponent/PoorCreditComponent";
 
 const App = () => {       
   const location = useLocation(); 
@@ -70,11 +71,12 @@ const App = () => {
       <Route path="/address" element={<AddressComponent />} />
       <Route path="/full-name" element={<NameComponent />} />
       <Route path="/phone" element={<PhoneComponent />} />
-
-      <Route path="/check-details" element={<CheckDetailsComponent />} />
-      <Route path="/aadhar" element={<AadharComponent />} />
       <Route path="/email" element={<EmailComponent />} />
-      {/* <Route path="/twelfth" element={< />} /> */}
+      <Route path="/aadhar" element={<AadharComponent />} />
+      <Route path="/check-details" element={<CheckDetailsComponent />} />
+      <Route path="/loan-calculation" element={<LoanCalculationComponent />} />
+      <Route path="/poor-credit" element={<PoorCreditComponent />} />
+
       </Routes>
 
       <Footer />

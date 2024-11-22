@@ -309,22 +309,34 @@ body {
     width: 40%;
   }
 
-  .options-image-section img {
-    max-width: 350px;
-    height: auto;
-  }
-
-  .options-privacy-text {
-    padding-top: 50px;
-  }
 }
 
 /* For screens with width up to 462px (Mobile Phones) */
-@media (max-width: 462px) {
-  .loan-nav .nav-link {
+@media (max-width: 480px) {
+  .loan-option-container {
+    max-width: 1300px;
     width: 100%;
-    height: auto;
-    font-size: 1.1rem;
+  }
+
+  .loan-option {
+    width: 100%;
+  }
+
+  .loan-icon {
+    margin-right: 15px;
+    padding-left: 10px;
+  }
+
+  .loan-nav .nav-link img {
+    max-width: 3rem;
+
+  }
+
+  .loan-nav .nav-link {
+    width: 90%;
+    padding: 5px;
+    margin: 2px auto;
+    font-size: 1rem;
     flex-direction: row;
     justify-content: flex-start;
   }
@@ -342,22 +354,14 @@ body {
   }
 
   .options-section-description {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .options-compare-button {
     font-size: 1.4rem;
-    width: 50%;
+    width: 40%;
   }
 
-  .options-image-section img {
-    max-width: 280px;
-    height: auto;
-  }
-
-  .options-privacy-text {
-    padding-top: 30px;
-  }
 }
 
 /* **** Banner-2 ( Why do millions of people trust Dhara Finance? ) **** */
@@ -443,15 +447,14 @@ body {
   line-height: 1.6;
 }
 
-/* Responsive Design */
-@media (max-width: 1200px) {
-  .banner-content {
-    gap: 20px;
-  }
-}
 
 /* For screens smaller than 991px */
 @media (max-width: 991px) {
+  .banner-section {
+    padding: 0px;
+    margin-top: 4%;
+ }
+
   .banner-content {
     flex-direction: column;
     align-items: center;
@@ -472,14 +475,15 @@ body {
 
   .content-container {
     width: 100%;
+    padding: 0 0px;
   }
-
+  
   .content-box {
     gap: 30px;
   }
 
   .banner-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
   }
 
@@ -501,8 +505,12 @@ body {
 
 /* For screens smaller than 768px */
 @media (max-width: 768px) {
+  .banner-section {
+    padding: 0px;
+ }
+
   .banner-title {
-    font-size: 1.75rem;
+    font-size: 1.65rem;
     display: flex;
     flex-wrap: wrap;
   }
@@ -519,12 +527,12 @@ body {
   .banner-content {
     flex-direction: column;
     text-align: center;
-    gap: 20px;
-    padding: 0 20px; /* Add padding for better spacing on mobile */
+    gap: 10px;
+    padding: 0 0px; 
   }
 
   .content-sec p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-align: center;
   }
 
@@ -551,8 +559,13 @@ body {
 
 /* For screens smaller than 480px */
 @media (max-width: 480px) {
+  .banner-section {
+     padding: 0px;
+  }
+
   .banner-title {
     font-size: 1.4rem;
+    line-height: 1.8rem;
   }
 
   .content-sec {
@@ -574,14 +587,13 @@ body {
   }
 
   .banner-content {
-    padding: 10px;
+    padding: 0px;
   }
 }
 
 /* **** publication section **** */
 .publication-section {
   background-color: #ffffff;
-  margin-top: -1rem;
 }
 
 .publication-text {
@@ -621,7 +633,7 @@ body {
 /* **** featured rates section **** */
 .featured-rates-section {
   width: 100%;
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   background-color: #f7f9fb;
 }
 
@@ -704,8 +716,8 @@ body {
 }
 
 .disclaimer {
-  font-size: 0.9rem;
-  color: #999;
+  font-size: 1rem;
+  color: #6e6868;
   max-width: 900px;
   padding-top: 3rem;
   margin: 0 auto;
@@ -770,7 +782,7 @@ body {
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  min-width: 240px;
+  min-width: 250px;
 }
 
 .financial-inside-box:hover {
@@ -779,15 +791,15 @@ body {
 }
 
 .financial-icon {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #22b89a;
   margin-bottom: 0.8rem;
 }
 
 .financial-inside-box h3 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #333;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .financial-inside-box p {
@@ -797,7 +809,7 @@ body {
 }
 
 .financial-box-link {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #22b89a;
   text-decoration: none;
   font-weight: bold;
@@ -873,9 +885,9 @@ body {
 
 .custom-text-p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 18px;
+  font-size: 19px;
   color: #4a4a4a;
-  text-align: justify;
+  text-align: left;
   margin-bottom: 30px;
 }
 
@@ -892,18 +904,19 @@ body {
 }
 
 .custom-lists li {
-  font-size: 16px;
+  font-size: 17px;
   display: flex;
   align-items: center;
   margin-bottom: 15px;
   color: rgba(68, 68, 68, 0.7);
+  opacity: 0.7;
   font-weight: 500;
   transition: color 0.3s, opacity 0.3s;
 }
 
 .custom-lists li svg {
   margin-right: 10px;
-  font-size: 20px;
+  font-size: 22px;
   color: #4b7a76;
 }
 
@@ -915,11 +928,11 @@ body {
 
 .custom-secondary-section {
   flex: 1 1 100%;
-  max-width: 400px;
+  max-width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px auto;
+  margin: 0px auto;
 }
 
 .custom-img {
@@ -927,7 +940,7 @@ body {
   max-width: 350px;
   height: auto;
   border-radius: 50%;
-  /* box-shadow: 0 4px 10px rgba0, 0, 0, 0.1); */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
 }
@@ -970,7 +983,7 @@ body {
   .custom-container {
     margin-top: 70px;
     margin-bottom: 0px;
-    padding: 0 0.6rem;
+    padding: 0 0rem;
   }
 
   .custom-primary-section {
@@ -979,21 +992,22 @@ body {
   }
 
   .custom-text-title {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .custom-text-p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: center;
   }
 
   .custom-lists {
-    gap: 30px;
-    justify-content: center;
+    gap: 0px;
+    margin-bottom: 4rem;
+    justify-content: space-evenly;
   }
 
   .custom-lists li {
-    font-size: 1.05rem;
+    font-size: 1.06rem;
   }
 
   .custom-img {

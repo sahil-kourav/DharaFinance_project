@@ -345,3 +345,147 @@
     width: 100%;
   }
 }
+
+
+
+
+/* ----- ------ */
+/* Poor Credit Container */
+.poor-credit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px auto;
+}
+
+
+.poor-credit-header h1 {
+  font-size: 1.4rem;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.status-message {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0px auto;
+}
+
+
+/* PersonalLoanComponent.css */
+.loan-details-container {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px 50px;
+  margin: 30px auto;
+  max-width: 1000px;
+  color: #333;
+}
+
+.loan-details-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.loan-details-header h1 {
+  font-size: 2.5rem;
+  color: #2d2d2d;
+  font-weight: 800;
+}
+
+.loan-details-header h3 {
+  font-size: 1.4rem;
+  color: #009688;
+  font-weight: 600;
+}
+
+.loan-summary, .loan-calculations {
+  margin-bottom: 0px;
+}
+
+.loan-summary h2, .loan-calculations h2 {
+  font-size: 1.7rem;
+  color: #2d2d2d;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.loan-details, .loan-calculations {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.loan-item, .calculation-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1rem;
+}
+
+.loan-item strong, .calculation-item strong {
+  color: #2d2d2d;
+  font-weight: 600;
+}
+
+.loan-item span, .calculation-item span {
+  color: #555;
+  font-weight: 400;
+}
+
+.loan-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.apply-button {
+  background-color: #009688;
+  color: white;
+  padding: 12px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.apply-button:hover {
+  background-color: #00796b;
+  transform: translateY(-2px);
+}
+
+.apply-button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .loan-details-container {
+    padding: 30px 20px;
+  }
+
+  .loan-details-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .loan-details-header h3 {
+    font-size: 1.1rem;
+  }
+
+  .loan-item, .calculation-item {
+    font-size: 0.9rem;
+  }
+
+  .apply-button {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+}
