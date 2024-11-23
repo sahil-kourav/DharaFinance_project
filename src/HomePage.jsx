@@ -9,7 +9,6 @@ import mint from "./Assets/mint.jpg";
 import mw from "./Assets/mw.png";
 import { FaHome, FaStar, FaCalculator, FaChartLine } from 'react-icons/fa'; // Import icons
 import cnbc from "./Assets/cnbc.jpg";
-import manwithphone from "./Assets/manwithphone.webp";
 import whatdoesltdowoman from "./Assets/what-does-lt-do-woman.jpeg";
 import { FaCar,FaCreditCard, FaMoneyBillWave, FaUniversity, FaShieldAlt } from 'react-icons/fa';
 
@@ -70,7 +69,7 @@ const HomePage = () => {
 
 
 {/* ------ publication section ------ */}
-  <div className="publication-section py-4">
+  <div className="publication-section py-3 mb-4">
       <div className="container text-center">
 
         <p className="publication-text">

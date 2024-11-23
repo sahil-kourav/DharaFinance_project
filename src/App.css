@@ -10,8 +10,6 @@ html,
 body {
   width: 100%;
   height: 100%;
-  /* margin-top: 50px; Adjust this value based on your navbar height */
-  /* overflow: hidden; */
 }
 
 /* Custom Scrollbar */
@@ -50,24 +48,24 @@ body {
 /* **** Loan options section  **** */
 /* Default Styles for Large Screens */
 .loan-option-container {
-  width: 1300px;
+  width: 1340px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+
 }
 
 .loan-nav .nav-link {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
-  width: 155px;
+  width: 145px;
   height: 130px;
   color: #333;
-  margin-right: 10px;
+  margin: 0 5px;
   border-radius: 6px;
+  padding: 0;
   background-color: whitesmoke;
   font-weight: 600;
   font-size: 16px;
@@ -76,7 +74,7 @@ body {
 .loan-nav .nav-link img {
   max-width: 50px;
   max-height: 45px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .loan-nav .nav-link.active {
@@ -147,6 +145,7 @@ body {
 
 .options-compare-button {
   font-size: 1.9rem;
+  width: 40%;
   border: none;
   border-radius: 8px;
   color: #fff;
@@ -174,37 +173,26 @@ body {
 .options-image-section img {
   max-width: 550px;
   width: 100%;
-  height: 330px;
-  object-fit: cover;
+  height: 350px;
+  background-position: cover;
 }
 
 /* Media Queries */
-
-/* For screens with width up to 1200px (Large Tablets) */
-@media (max-width: 1200px) {
-  .loan-option-container {
-    width: 100%;
-    padding: 0 20px;
-  }
-
-  .loan-nav .nav-link {
-    width: 140px;
-    height: 120px;
-  }
-
-  .options-box-container {
-    max-width: 100%;
-    margin: 20px 0;
-  }
-
-  .options-image-section img {
-    max-width: 480px;
-    height: auto;
-  }
-}
-
-/* For screens with width up to 991px (Medium Tablets) */
 @media (max-width: 991px) {
+  .site-heading{
+    margin: 35px auto;
+    }
+  
+    .site-title{
+      font-size: 35px;
+      font-weight: 800;
+    }
+  
+    .site-title-span{
+      font-size: 35px;
+      font-weight: 800;
+    }
+
   .loan-option-container {
     max-width: 1300px;
     width: 100%;
@@ -213,8 +201,9 @@ body {
   .loan-nav .nav-link {
     width: 100%;
     height: auto;
-    margin: 2px 0;
-    font-size: 1.1rem;
+    margin: 5px 0;
+    padding: 5px 10px;
+    font-size: 1.2rem;
     flex-direction: row;
     justify-content: flex-start;
   }
@@ -224,11 +213,13 @@ body {
   }
 
   .loan-icon {
-    margin-right: 30px;
+    margin-right: 15px;
+    padding-left: 10px;
   }
 
   .loan-nav .nav-link img {
-    max-width: 2.2rem;
+    max-width: 2.6rem;
+    margin-top: 5px;
   }
 
   .loan-nav .nav-link.active {
@@ -268,8 +259,9 @@ body {
   }
 
   .options-compare-button {
-    font-size: 1.6rem;
+    font-size: 2rem;
     width: 40%;
+    height: 50px;
   }
 
   .options-image-section img {
@@ -285,10 +277,8 @@ body {
 @media (max-width: 768px) {
   .loan-nav .nav-link {
     width: 100%;
-    height: auto;
     font-size: 1.1rem;
-    flex-direction: row;
-    justify-content: flex-start;
+
   }
 
   .options-content-section {
@@ -308,13 +298,25 @@ body {
     font-size: 1.5rem;
     width: 40%;
   }
-
 }
 
 /* For screens with width up to 462px (Mobile Phones) */
 @media (max-width: 480px) {
+  .site-heading{
+  margin: 30px auto;
+  }
+
+  .site-title{
+    font-size: 23px;
+    font-weight: 800;
+  }
+
+  .site-title-span{
+    font-size: 23px;
+    font-weight: 800;
+  }
+  
   .loan-option-container {
-    max-width: 1300px;
     width: 100%;
   }
 
@@ -328,25 +330,19 @@ body {
   }
 
   .loan-nav .nav-link img {
-    max-width: 3rem;
-
+    max-width: 2.4rem;
+    margin-top: 7px;
   }
 
   .loan-nav .nav-link {
-    width: 90%;
+    width: 100%;
     padding: 5px;
-    margin: 2px auto;
+    margin: 5px auto;
     font-size: 1rem;
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-
-  .options-box-container {
-    padding: 0 10px;
   }
 
   .options-content-section {
-    padding: 10px;
+    padding: 5px;
   }
 
   .options-section-title {
@@ -354,12 +350,12 @@ body {
   }
 
   .options-section-description {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
 
   .options-compare-button {
     font-size: 1.4rem;
-    width: 40%;
+    width: 50%;
   }
 
 }
@@ -369,6 +365,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   padding: 40px;
   background-color: #fff;
@@ -501,6 +498,10 @@ body {
     text-align: center;
     font-size: 1rem;
   }
+
+  .divider {
+    margin-top: 40px;
+  }
 }
 
 /* For screens smaller than 768px */
@@ -555,6 +556,7 @@ body {
     object-fit: cover;
     border-radius: 8px;
   }
+
 }
 
 /* For screens smaller than 480px */
@@ -565,6 +567,7 @@ body {
 
   .banner-title {
     font-size: 1.4rem;
+    padding: 2px;
     line-height: 1.8rem;
   }
 
@@ -578,7 +581,7 @@ body {
   }
 
   .content-sec p {
-    font-size: 0.875rem;
+    font-size: 1rem;
     text-align: center;
   }
 
@@ -630,6 +633,67 @@ body {
   height: 30px;
 }
 
+
+/* Breakpoint: Max Width 991px */ 
+ @media (max-width: 991px) {
+  .publication-section {
+    padding: 1.5rem 0;
+  }
+
+  .publication-text {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .logos-container {
+    gap: 1rem; 
+  }
+
+  .publication-logo {
+    max-width: 100px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .publication-text {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem; 
+  }
+
+  .publication-logo {
+    max-width: 90px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .publication-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .logos-container {
+    flex-direction: row; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .publication-logo {
+    max-width: 55px; 
+    margin-bottom: 0;
+  } 
+}
+
+
 /* **** featured rates section **** */
 .featured-rates-section {
   width: 100%;
@@ -647,7 +711,6 @@ body {
   font-size: 2.1rem;
   font-weight: 600;
   color: #333;
-  /* margin-bottom: 3rem; */
   position: relative;
   letter-spacing: 0.5px;
 }
@@ -724,6 +787,51 @@ body {
   text-align: center;
 }
 
+
+@media (max-width: 991px) {
+  .featured-rates-section {
+    padding: 2rem 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .featured-title {
+    font-size: 1.8rem; /* Reduce font size for better readability */
+  }
+
+  .rate-cards-wrapper {
+    gap: 1.5rem; /* Adjust spacing between cards */
+    margin-top: 2rem; /* Adjust top margin */
+  }
+
+  .rate-card {
+    width: 45%; /* Make cards take less space to fit in smaller screens */
+    min-width: auto; /* Remove fixed min-width for flexibility */
+    padding: 1.5rem; /* Reduce padding inside the card */
+  }
+
+  .rate-type {
+    font-size: 1rem; /* Slightly reduce the font size */
+  }
+
+  .rate-desc {
+    font-size: 0.9rem; /* Adjust for smaller screens */
+  }
+
+  .rate-value {
+    font-size: 1.6rem; /* Make values smaller to fit better */
+  }
+
+  .rate-term {
+    font-size: 0.9rem; /* Adjust to match the rest of the text */
+    line-height: 1.4; /* Slightly tighter line spacing */
+  }
+
+  .disclaimer {
+    font-size: 0.9rem; /* Adjust font size for consistency */
+    padding-top: 2rem; /* Adjust padding for smaller screens */
+    width: 100%; /* Ensure disclaimer spans full width on small screens */
+  }
+}
+
 @media (max-width: 768px) {
   .rate-cards-wrapper {
     justify-content: center;
@@ -737,10 +845,11 @@ body {
 @media (max-width: 480px) {
   .featured-title {
     font-size: 1.5rem;
+    color: #1a1a1a;
   }
 
   .rate-card {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -749,7 +858,7 @@ body {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
-  padding-top: 3.6rem;
+  padding-top: 3rem;
   text-align: center;
 }
 
@@ -827,6 +936,10 @@ body {
 }
 
 @media (max-width: 480px) {
+  .financial-journey-container {
+     padding-top: 40px;
+  }
+
   .financial-inside-box {
     flex: 1 1 100%;
   }
@@ -841,17 +954,17 @@ body {
   }
 
   .financial-inside-box h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
   }
 
   .financial-inside-box p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 0.6rem;
   }
 
   .financial-box-link {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: #22b89a;
   }
 }
@@ -981,8 +1094,8 @@ body {
 /* For screens smaller than 991px */
 @media (max-width: 991px) {
   .custom-container {
-    margin-top: 70px;
-    margin-bottom: 0px;
+    margin-top: 60px;
+    margin-bottom: -10px;
     padding: 0 0rem;
   }
 
@@ -1007,7 +1120,8 @@ body {
   }
 
   .custom-lists li {
-    font-size: 1.06rem;
+    font-size: 1.1rem;
+    opacity: 1;
   }
 
   .custom-img {
@@ -1032,7 +1146,7 @@ body {
   }
 
   .custom-text-p {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
   }
 
   .custom-lists {
@@ -1044,7 +1158,8 @@ body {
   }
 
   .custom-lists li {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    opacity: 1;
   }
 
   .custom-secondary-section {
@@ -1055,8 +1170,8 @@ body {
 /* For screens smaller than 462px (mobile) */
 @media (max-width: 462px) {
   .custom-container {
-    margin-top: 60px;
-    margin-bottom: -40px;
+    margin-top: 55px;
+    margin-bottom: -30px;
     padding: 0;
   }
 
@@ -1065,11 +1180,12 @@ body {
   }
 
   .custom-text-title {
-    font-size: 1.3rem;
+    font-size: 1.45rem;
+    font-weight: 700;
   }
 
   .custom-text-p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .custom-lists {
@@ -1077,7 +1193,8 @@ body {
   }
 
   .custom-lists li {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
+    opacity: 1;
   }
 
   .custom-lists li svg {

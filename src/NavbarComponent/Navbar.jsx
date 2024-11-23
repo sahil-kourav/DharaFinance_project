@@ -90,19 +90,13 @@
 
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-// import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 const Navbar = () => {
-  const [searchActive, setSearchActive] = useState(false);
-
-  const handleSearchClick = () => {
-    setSearchActive(!searchActive);
-  };
-
   const [isNavbarActive, setIsNavbarActive] = useState(false);
 
   const toggleNavbar = () => {
@@ -115,14 +109,18 @@ const Navbar = () => {
         DharaFinance
       </NavLink>
 
-      <div className="menu-icon" id="menu-icon" onClick={toggleNavbar}>
-        <MenuIcon style={{ fontSize: "3rem", color: "#ededed" }} />
+      <div className="menu-icon" onClick={toggleNavbar}>
+        {isNavbarActive ? (
+          <CloseIcon style={{ fontSize: "2.5rem", color: "#ededed" }} />
+        ) : (
+          <MenuIcon style={{ fontSize: "2.5rem", color: "#ededed" }} />
+        )}
       </div>
 
       <nav className={`navbar ${isNavbarActive ? "active" : ""}`}>
         <ul className="navbar-nav">
           <li className="nav-item">
-            <NavLink  className="nav-link" activeClassName="active" to="/">
+            <NavLink className="nav-link" activeClassName="active" to="/">
               Home
             </NavLink>
           </li>
@@ -145,45 +143,15 @@ const Navbar = () => {
             </NavLink>
           </li>
 
-        <form className="connect-form">
-            <li className="nav-item">
-              <NavLink
-                to="/connect-us"
-                className="btn btn-outline-light connect-btn"
-              >
-                Contact Us
-              </NavLink>
-            </li>
-
-            <li className="nav-item">
-              {searchActive ? (
-                <div className="search-box">
-                  <input
-                    type="text"
-                    className="search-input"
-                    placeholder="Search about loans"
-                    aria-label="Search"
-                  />
-                  <button
-                    className="btn btn-outline-light close-btn"
-                    onClick={handleSearchClick}
-                    type="button"
-                  >
-                    <i className="bi bi-x"></i>
-                  </button>
-                </div>
-              ) : (
-                <button
-                  className="btn btn-outline-light search-btn"
-                  type="button"
-                  onClick={handleSearchClick}
-                >
-                  <i className="bi bi-search"></i>
-                </button>
-              )}
-            </li>
-        </form>
-          </ul>
+          <li className="nav-item">
+            <NavLink
+              to="/connect-us"
+              className="btn btn-outline-light connect-btn"
+            >
+              Contact Us
+            </NavLink>
+          </li>
+        </ul>
 
         <span className="active-nav"></span>
       </nav>

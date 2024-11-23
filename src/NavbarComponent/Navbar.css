@@ -170,12 +170,14 @@
 
 .navbar .navbar-nav .nav-item {
   margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
   color: white;
-  padding: 15px 15px;
-  margin-left: 5px;
+  padding: 10px 20px;
   font-size: 18px;
 }
 
@@ -189,18 +191,11 @@
   color: rgb(226, 159, 113);
 }
 
-#menu-icon {
+.menu-icon {
   position: relative;
   font-size: 3.6rem;
   cursor: pointer;
   display: none;
-}
-
-.connect-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
 }
 
 
@@ -209,54 +204,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 9px 14px;
-  margin-right: 10px;
+  padding: 10px 14px;
+  margin: auto 0;
 }
-
-.search-box {
-  display: flex;
-  align-items: center;
-  background-color: white;
-  border-radius: 8px;
-  padding: 10px 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  height: 44px;
-  transition: border-color 0.3s, box-shadow 0.3s; 
-}
-
-.search-input {
-  width: 230px;
-  border-radius: 10px;
-  font-size: 16px;
-  border: none;
-  outline: none;
-  height: 44px;
-  padding: 10px 5px;
-  transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-.search-input::placeholder{
-  font-size: 15px;
-}
-.search-btn{
-  font-size: 16px;
-  padding: 8px 12px;
-}
-
-.close-btn {
-  color: #000;
-  border: none;
-  outline: none;
-  font-size: 1.7rem;
-  cursor: pointer;
-  padding: 0px 5px;
-}
-
-.close-btn:hover{
-  background-color: white;
-  color: rgb(226, 59, 13);
-}
-
 
 
 @media (max-width: 991px) {
@@ -265,7 +215,7 @@
     height: 70px;
   }
 
-  #menu-icon {
+  .menu-icon {
     display: block;
   }
 
@@ -309,9 +259,6 @@
     display: block;
     font-size: 2rem;
     margin: 1rem 0;
-    transform: translateX(-20rem);
-    transition: .25s ease;
-    transition-delay: 0s;
   }
 
   .navbar.active .nav-item {
@@ -324,27 +271,62 @@
   }
 
  .navbar .navbar-nav {
-  display: flex;
+    display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
   }
 
-  .navbar .nav-item {
-    margin: 1rem 0;
+  .navbar .navbar-nav .nav-item {
     font-size: 2rem;
-    text-align: left;
-  }
-  
-  .connect-form {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    gap: 0px;
+  } 
+
+  .menu-icon {
+    display: block;
+    font-size: 1rem;
   }
    
   .connect-btn {
     font-size: 16px;
-    padding: 9px 14px;
-    margin-left: 15px;
+    padding: 10px 14px;
+    margin-left: 10px;
   }
 } 
+
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .connect-btn {
+    font-size: 16px;
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .navbar .nav-item {
+    display: block;
+    font-size: 2rem;
+    margin: 0.8rem 0;
+  }
+  .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 1rem;
+  }
+
+  .connect-btn {
+    font-size: 16px;
+    padding: 10px 14px;
+    font-weight: 600;
+  }
+}

@@ -34,7 +34,7 @@ const LoanOptions = () => {
       </div>
 
 
-      <Container className="loan-option-container mt-0">
+      <Container className="loan-option-container">
         <Tab.Container defaultActiveKey="personalLoans" >
           <div className="loan-box">
             <Row>
