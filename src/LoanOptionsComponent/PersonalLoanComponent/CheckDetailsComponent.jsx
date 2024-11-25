@@ -131,7 +131,7 @@ const CheckDetailsComponent = () => {
           <span className="data-value">{zipCode}</span>
         </div>
       </div>
-      <div className="loan-details-actions" style={{ width: "400px", margin: "0 auto" }}>
+      <div className="loan-details-actions" >
         <button type="button" className="personal-loan-submit-button" onClick={handleNavigate}>
           Confirm and Apply
         </button>
