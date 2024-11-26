@@ -35,7 +35,7 @@ const NameComponent = () => {
 <h2 className="personal-loan-subtitle">We need this info to find your personalized rates.</h2>
 
       <form className="personal-loan-form-section" onSubmit={handleSubmit}>
-      <label htmlFor="loanPurpose" className="personal-loan-label">First Name</label>
+      <label htmlFor="firstName" className="personal-loan-label">First Name</label>
         <input
           type="text"
           id="firstName"
@@ -46,7 +46,7 @@ const NameComponent = () => {
           required
         />
 
-<label htmlFor="loanPurpose" className="personal-loan-label">Last Name</label>
+<label htmlFor="lastName" className="personal-loan-label">Last Name</label>
         <input
           type="text"
           id="lastName"

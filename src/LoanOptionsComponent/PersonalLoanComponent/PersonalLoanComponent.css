@@ -3,7 +3,7 @@
   font-family: Arial, sans-serif;
   text-align: center;
   max-width: 600px;
-  height: auto;
+  height: 500px;
   margin: 20px auto;
   background-color: #f9f9f9;
   padding: 20px;
@@ -197,7 +197,7 @@
 @media (max-width: 480px) {
   .personal-loan-container {
     max-width: 100%;
-    height: 480px;
+    height: 550px;
     padding: 10px;
   }
 
@@ -205,15 +205,20 @@
     font-size: 1.8rem;
   }
   .personal-loan-option-container{
-     width: 300px;
+     width: 330px;
   }
   .personal-loan-option {
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 10px;
   }
 
   .personal-loan-form-section{
     width: 100%;
+  }
+
+  .personal-loan-label{
+    text-align: left;
+    margin-left: 20px;
   }
 
   .personal-loan-dropdown,
